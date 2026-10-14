@@ -1,35 +1,41 @@
 {
+  "available": true,
+  "updated_at": "15:30:00",
   "items": [
     {
       "id": "news_01",
+      "published_at": "2026-10-14 15:30:00",
+      "source_label": "财联社",
       "title": "A股三大指数震荡整理，AI影视与传媒逆市爆发，慈文传媒斩获4连板",
       "summary": "10月14日盘后，沪指缩量收于3767点，AI应用与影视传媒方向主力抱团明显，短线空间标杆慈文传媒、新经典领跑连板天梯。",
-      "source": "财联社",
-      "time": "2026-10-14 15:30",
+      "is_truncated": false,
       "url": "https://www.cls.cn/"
     },
     {
       "id": "news_02",
+      "published_at": "2026-10-14 16:15:00",
+      "source_label": "证券时报",
       "title": "三季报业绩预增掀起涨停潮，机构重仓高确定性标的逆势抗跌",
       "summary": "鼎胜新材、浙农股份等三季报大幅预增个股开盘秒板，多只绩优股创百日新高，主力资金在弱势行情中避险抱团防御性红利资产。",
-      "source": "证券时报",
-      "time": "2026-10-14 16:15",
+      "is_truncated": false,
       "url": "https://www.stcn.com/"
     },
     {
       "id": "news_03",
+      "published_at": "2026-10-14 16:45:00",
+      "source_label": "第一财经",
       "title": "高层强调加快发展新质生产力，高端覆铜板与PCB先进制造获资金关注",
       "summary": "超声电子T字晋级2连板，盘中高频高速覆铜板及芯片半导体材料多次逆势拉升，成为盘面重要科技支撑主线。",
-      "source": "第一财经",
-      "time": "2026-10-14 16:45",
+      "is_truncated": false,
       "url": "https://www.yicai.com/"
     },
     {
       "id": "news_04",
+      "published_at": "2026-10-14 17:10:00",
+      "source_label": "同花顺",
       "title": "水产与冷链物流异动走强，百洋股份一字晋级4板确立周期高标",
       "summary": "远洋捕捞及预制菜龙头百洋股份竞价获3.85亿大单顶死一字板，冰山冷热一字2连板，冷链与农副产品供应链获游资持续加码。",
-      "source": "同花顺财经",
-      "time": "2026-10-14 17:10",
+      "is_truncated": false,
       "url": "https://www.10jqka.com.cn/"
     }
   ],

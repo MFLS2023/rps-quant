@@ -1305,204 +1305,10 @@
     ],
     "exit_pool_list": [],
     "pool_industries": [
-      {
-        "name": "PCB",
-        "count": 7,
-        "previous_count": 6,
-        "new_count": 1,
-        "exit_count": 0,
-        "retained_count": 6,
-        "share_pct": 21.88
-      },
-      {
-        "name": "医疗耗材",
-        "count": 3,
-        "previous_count": 2,
-        "new_count": 1,
-        "exit_count": 0,
-        "retained_count": 2,
-        "share_pct": 9.38
-      },
-      {
-        "name": "装修装饰",
-        "count": 2,
-        "previous_count": 1,
-        "new_count": 1,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 6.25
-      },
-      {
-        "name": "半导体材料",
-        "count": 2,
-        "previous_count": 1,
-        "new_count": 1,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 6.25
-      },
-      {
-        "name": "其他生物制药",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "粮油加工",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "大众出版",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "LED",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "面板",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "厨房小家电",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "激光设备",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "水力发电",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "环保设备",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "行业应用软件",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "化学制剂",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "陶瓷",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "车身附件及饰件",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "无机盐",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "住宅开发",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "航海装备",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "跨境电商",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      },
-      {
-        "name": "军工电子",
-        "count": 1,
-        "previous_count": 1,
-        "new_count": 0,
-        "exit_count": 0,
-        "retained_count": 1,
-        "share_pct": 3.12
-      }
+      "视频音频媒体",
+      "影视制作",
+      "出版",
+      "油气开采"
     ],
     "pool_concepts": [
       {
@@ -1527,44 +1333,12 @@
       }
     ],
     "market_mainline": {
-      "date": "2026-10-14",
-      "mainlines": [
-        {
-          "industry": "AI影视传媒",
-          "score": 92.5,
-          "tier": "mainline",
-          "tier_label": "主线",
-          "confidence": 100,
-          "triple_stock_count": 3
-        },
-        {
-          "industry": "三季报预增",
-          "score": 88.0,
-          "tier": "mainline",
-          "tier_label": "主线",
-          "confidence": 95,
-          "triple_stock_count": 4
-        },
-        {
-          "industry": "创新药与医疗",
-          "score": 85.5,
-          "tier": "mainline",
-          "tier_label": "主线",
-          "confidence": 90,
-          "triple_stock_count": 4
-        }
-      ],
-      "secondaries": [
-        {
-          "industry": "高端PCB",
-          "score": 78.0,
-          "tier": "secondary",
-          "tier_label": "支线",
-          "confidence": 85,
-          "triple_stock_count": 2
-        }
-      ],
-      "rotations": []
+      "headline": "AI应用与影视传媒逆市走强，低位防守板块轮动活跃",
+      "reasons": [
+        "AI应用与短剧传媒方向迎利好爆发，标杆慈文传媒晋级4板领跑全市场",
+        "油气与能源低位防御板块获主力资金持续流入，承接大盘分歧压力",
+        "两市成交缩量至1.41万亿，高位股退潮分化，宜聚焦低吸核心主线"
+      ]
     }
   },
   "limit_up_ladder": {
@@ -1708,6 +1482,18 @@
         "name": "百洋股份",
         "consecutive": 4,
         "industry": "水产品/预制菜"
+      },
+      {
+        "code": "603888",
+        "name": "新华网",
+        "consecutive": 2,
+        "industry": "媒体/出版"
+      },
+      {
+        "code": "002238",
+        "name": "天威视讯",
+        "consecutive": 2,
+        "industry": "广电/传媒"
       }
     ],
     "height_stocks": [
@@ -1728,8 +1514,53 @@
         "name": "百洋股份",
         "consecutive": 4,
         "industry": "水产品/预制菜"
+      },
+      {
+        "code": "603888",
+        "name": "新华网",
+        "consecutive": 2,
+        "industry": "媒体/出版"
+      },
+      {
+        "code": "002238",
+        "name": "天威视讯",
+        "consecutive": 2,
+        "industry": "广电/传媒"
       }
-    ]
+    ],
+    "consecutive_stocks": [
+      {
+        "code": "002343",
+        "name": "慈文传媒",
+        "consecutive": 4,
+        "industry": "AI影视/文化"
+      },
+      {
+        "code": "603096",
+        "name": "新经典",
+        "consecutive": 4,
+        "industry": "版权/出版"
+      },
+      {
+        "code": "002696",
+        "name": "百洋股份",
+        "consecutive": 4,
+        "industry": "水产品/预制菜"
+      },
+      {
+        "code": "603888",
+        "name": "新华网",
+        "consecutive": 2,
+        "industry": "媒体/出版"
+      },
+      {
+        "code": "002238",
+        "name": "天威视讯",
+        "consecutive": 2,
+        "industry": "广电/传媒"
+      }
+    ],
+    "consecutive_count": 5
   },
   "promotion_rates": {
     "date": "2026-10-14",

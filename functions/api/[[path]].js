@@ -76,6 +76,11 @@ export async function onRequest(context) {
       phase: "弱势震荡",
       sentiment_index: 38.0,
       status: "弱势震荡",
+      risk_tips: [
+        "防范高位股补跌与炸板风险",
+        "控制短线总仓位在3成以下"
+      ],
+      action_hint: "以低吸核心主线为宜，谨慎追高加速连板",
       source: "通达信+开盘啦"
     };
   } else if (path === '/api/news/market') {
