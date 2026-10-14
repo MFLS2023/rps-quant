@@ -46,5 +46,26 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      (function() {
+        function mount() {
+          if (document.getElementById('nav-kaipanla-btn')) return;
+          var links = Array.from(document.querySelectorAll('nav a'));
+          var target = links.find(function(a) {
+            return a.getAttribute('href') === '/market' || a.getAttribute('href') === '/stock-rps';
+          });
+          if (target && target.parentElement) {
+            var btn = document.createElement('a');
+            btn.id = 'nav-kaipanla-btn';
+            btn.href = '/kaipanla.html';
+            btn.className = target.className;
+            btn.innerHTML = '<span style="color:#f43f5e;font-weight:bold;display:inline-flex;align-items:center;gap:4px;"><span style="width:6px;height:6px;border-radius:50%;background:#f43f5e;display:inline-block;"></span>🔥 开盘啦</span>';
+            target.parentElement.insertBefore(btn, target.nextSibling);
+          }
+        }
+        setInterval(mount, 300);
+        mount();
+      })();
+    </script>
   </body>
 </html>

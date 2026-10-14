@@ -88,6 +88,20 @@ export async function onRequest(context) {
     respData = await getStaticJson('/data/extra_intelligence/market_high_stocks.json', { items: [] });
   } else if (path === '/api/vcp/strategy-dates') {
     respData = { dates: [date] };
+  } else if (path === '/api/market/kaipanla') {
+    respData = await getStaticJson('/data/extra_intelligence/kaipanla_data.json', {});
+  } else if (path === '/api/market/sentiment-full') {
+    const kpl = await getStaticJson('/data/extra_intelligence/kaipanla_data.json', {});
+    respData = kpl.market_sentiment || {};
+  } else if (path === '/api/market/fupanla-timeline') {
+    const kpl = await getStaticJson('/data/extra_intelligence/kaipanla_data.json', {});
+    respData = kpl.fupanla || {};
+  } else if (path === '/api/market/new-high') {
+    const kpl = await getStaticJson('/data/extra_intelligence/kaipanla_data.json', {});
+    respData = kpl.new_high_100 || {};
+  } else if (path === '/api/market/period-statistics') {
+    const kpl = await getStaticJson('/data/extra_intelligence/kaipanla_data.json', {});
+    respData = kpl.period_statistics || {};
   } else {
     const cleanPath = path.replace('/api/', '').replace(/\//g, '_');
     respData = await getStaticJson(`/data/extra_intelligence/${cleanPath}.json`, {});

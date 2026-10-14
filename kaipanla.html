@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="zh-CN" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>开盘啦决策工作台 · 市场情绪 · 复盘啦 · 百日新高 · 区间统计</title>
+  <link rel="icon" type="image/png" href="/brand/rps-outu-mark-electric.png" />
+  <link rel="stylesheet" href="/assets/index-47ATc6WS.css" />
+  <style>
+    :root {
+      --bg-dark: #0b0f17;
+      --card-bg: rgba(18, 24, 38, 0.7);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --up-red: #f43f5e;
+      --down-green: #10b981;
+      --warn-yellow: #f59e0b;
+      --accent-blue: #38bdf8;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    .glass-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      transition: all 0.2s ease;
+    }
+    .glass-card:hover {
+      border-color: rgba(255, 255, 255, 0.16);
+    }
+    .badge-new {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+      display: inline-block;
+      box-shadow: 0 2px 6px rgba(239, 68, 68, 0.4);
+    }
+    .nav-tab-btn.active {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border-color: rgba(56, 189, 248, 0.5);
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.25s ease forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- 1. 全局顶部导航栏 (与量化工作台保持 1:1 风格) -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0f1318]/90 backdrop-blur-md px-4 py-2.5">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Logo + 站点名称 -->
+      <div class="flex items-center space-x-6">
+        <a href="/" class="flex items-center space-x-2.5 group">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
+            <span class="text-white font-black text-sm tracking-tighter">RPS</span>
+          </div>
+          <span class="font-bold text-base tracking-wide text-white group-hover:text-cyan-400 transition">RPS 欧途量化</span>
+        </a>
+
+        <!-- 主导航入口 -->
+        <nav class="hidden md:flex items-center space-x-1 text-sm font-medium">
+          <a href="/" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">市场概览</a>
+          <a href="/stock-rps" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">个股RPS</a>
+          <a href="/industry-rps" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">行业RPS</a>
+          <a href="/market" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">市场热点</a>
+          <a href="/fund-flow" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">资金动向</a>
+          <a href="/auction" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">盘前竞价</a>
+          <a href="/vcp" class="px-3 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 transition">策略选股</a>
+          
+          <!-- 🔥 开盘啦核心专属入口 (高亮徽标) -->
+          <a href="/kaipanla" class="ml-2 px-3.5 py-1.5 rounded-lg bg-rose-500/15 border border-rose-500/40 text-rose-400 font-semibold flex items-center space-x-1.5 hover:bg-rose-500/25 transition shadow-sm shadow-rose-500/10">
+            <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+            <span>🔥 开盘啦精选</span>
+          </a>
+        </nav>
+      </div>
+
+      <!-- 右侧辅助按钮 -->
+      <div class="flex items-center space-x-3 text-xs">
+        <span class="px-2.5 py-1 rounded bg-slate-800/80 border border-slate-700/60 text-slate-300 font-mono">📅 2026-10-14 收盘</span>
+        <a href="/stock-rps" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 transition font-medium">返回工作台</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. 开盘啦四大功能模块二级子导航 Tab 栏 -->
+  <div class="border-b border-white/5 bg-[#131924]/60 px-4 py-2 sticky top-[53px] z-40 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <button onclick="switchTab('sentiment')" id="tab-btn-sentiment" class="nav-tab-btn active px-4 py-2 rounded-lg text-sm font-semibold border border-transparent transition flex items-center space-x-2">
+          <span>🌡️ 市场情绪</span>
+        </button>
+        <button onclick="switchTab('fupanla')" id="tab-btn-fupanla" class="nav-tab-btn px-4 py-2 rounded-lg text-sm font-semibold border border-transparent text-slate-400 hover:text-white transition flex items-center space-x-2">
+          <span>📋 复盘啦</span>
+        </button>
+        <button onclick="switchTab('newhigh')" id="tab-btn-newhigh" class="nav-tab-btn px-4 py-2 rounded-lg text-sm font-semibold border border-transparent text-slate-400 hover:text-white transition flex items-center space-x-2">
+          <span>🚀 百日新高</span>
+          <span class="px-1.5 py-0.2 bg-rose-500/20 text-rose-400 text-xs rounded border border-rose-500/30 font-mono">133</span>
+        </button>
+        <button onclick="switchTab('period')" id="tab-btn-period" class="nav-tab-btn px-4 py-2 rounded-lg text-sm font-semibold border border-transparent text-slate-400 hover:text-white transition flex items-center space-x-2">
+          <span>📊 区间统计</span>
+        </button>
+      </div>
+
+      <div class="text-xs text-slate-400 hidden sm:block">
+        数据口径：开盘啦官方算法 + 通达信本地 5580 股日线对账
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. 主视图容器 -->
+  <main class="max-w-7xl mx-auto px-4 py-6 flex-1 w-full space-y-6">
+
+    <!-- ==================== TAB 1: 市场情绪 ==================== -->
+    <section id="view-sentiment" class="tab-content active space-y-6">
+      <!-- 顶部指数与综合情绪计 -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <!-- 情绪综合分卡片 -->
+        <div class="glass-card p-5 relative overflow-hidden flex flex-col justify-between">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="text-xs uppercase tracking-wider text-slate-400 font-medium">市场短线综合情绪</span>
+              <div class="flex items-baseline space-x-3 mt-1.5">
+                <span class="text-4xl font-black text-amber-400 font-mono" id="sentiment-score">38</span>
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 font-semibold" id="sentiment-status">弱势震荡</span>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-xs text-slate-400">上证指数</span>
+              <div class="text-lg font-bold font-mono text-emerald-400 mt-1">3767.23 <span class="text-xs">-0.88%</span></div>
+            </div>
+          </div>
+
+          <!-- 0~100 综合情绪刻度条 -->
+          <div class="mt-4 space-y-2">
+            <div class="flex justify-between text-[11px] text-slate-400 font-medium">
+              <span>0 冰点极值</span>
+              <span>25 弱势分歧</span>
+              <span>50 情绪平衡</span>
+              <span>75 亢奋加速</span>
+              <span>100 见顶高潮</span>
+            </div>
+            <div class="w-full h-3 rounded-full bg-slate-800 overflow-hidden relative p-0.5 border border-white/5">
+              <div class="h-full rounded-full bg-gradient-to-r from-emerald-500 via-amber-500 to-rose-600 transition-all duration-500" style="width: 38%;"></div>
+            </div>
+            <div class="text-xs text-slate-400 text-center pt-1">
+              当前市场处于 <span class="text-amber-400 font-semibold">弱势震荡防守期</span>，连板晋级率不高，操作宜以控制仓位和低吸主线为主。
+            </div>
+          </div>
+        </div>
+
+        <!-- 涨跌统计与涨跌停对比 -->
+        <div class="glass-card p-5 flex flex-col justify-between">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs uppercase tracking-wider text-slate-400 font-medium">全市场涨跌统计 (过滤ST)</span>
+            <span class="text-xs text-slate-400">总样本: 5599 家</span>
+          </div>
+
+          <!-- 涨跌家数比例条 -->
+          <div class="space-y-3">
+            <div class="flex justify-between items-center text-sm font-bold">
+              <span class="text-rose-400">上涨 978 家 (17.5%)</span>
+              <span class="text-emerald-400">下跌 4496 家 (80.3%)</span>
+            </div>
+            <div class="w-full h-3 rounded-full bg-emerald-950/80 overflow-hidden flex border border-white/5">
+              <div class="h-full bg-rose-500 transition-all" style="width: 17.5%;"></div>
+              <div class="h-full bg-emerald-500 transition-all" style="width: 80.3%;"></div>
+              <div class="h-full bg-slate-500 transition-all" style="width: 2.2%;"></div>
+            </div>
+          </div>
+
+          <!-- 涨跌停比与量能 -->
+          <div class="grid grid-cols-2 gap-3 mt-4 pt-4 border-t border-white/5 text-center">
+            <div class="p-2 rounded-lg bg-white/5">
+              <span class="text-xs text-slate-400">真实涨停 / 跌停</span>
+              <div class="text-base font-bold font-mono mt-0.5">
+                <span class="text-rose-400">36</span> : <span class="text-emerald-400">11</span>
+              </div>
+            </div>
+            <div class="p-2 rounded-lg bg-white/5">
+              <span class="text-xs text-slate-400">全天两市成交额</span>
+              <div class="text-base font-bold font-mono text-slate-200 mt-0.5">
+                14265 亿 <span class="text-xs text-emerald-400 font-normal">(-15.5%)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 短线四大次日溢价指标 (四大金刚) -->
+        <div class="glass-card p-5 flex flex-col justify-between">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs uppercase tracking-wider text-slate-400 font-medium">短线情绪风向标 · 四大金刚</span>
+            <span class="text-[11px] text-slate-500">次日溢价</span>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5">
+            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-white/5">
+              <div class="text-[11px] text-slate-400">今日涨停破板率</div>
+              <div class="text-lg font-bold font-mono text-emerald-400 mt-0.5">40.00% <span class="text-xs font-normal text-slate-400">(偏高)</span></div>
+              <div class="text-[10px] text-slate-500 mt-0.5">炸板 24 家</div>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-white/5">
+              <div class="text-[11px] text-slate-400">昨日涨停今表现</div>
+              <div class="text-lg font-bold font-mono text-yellow-400 mt-0.5">+0.09% <span class="text-xs font-normal text-slate-400">(弱)</span></div>
+              <div class="text-[10px] text-slate-500 mt-0.5">连板淘汰剧烈</div>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-white/5">
+              <div class="text-[11px] text-slate-400">昨日连板今表现</div>
+              <div class="text-lg font-bold font-mono text-yellow-400 mt-0.5">+0.82% <span class="text-xs font-normal text-slate-400">(弱)</span></div>
+              <div class="text-[10px] text-slate-500 mt-0.5">高位股分化</div>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-white/5">
+              <div class="text-[11px] text-slate-400">昨日破板今表现</div>
+              <div class="text-lg font-bold font-mono text-emerald-400 mt-0.5">-0.73% <span class="text-xs font-normal text-slate-400">(低)</span></div>
+              <div class="text-[10px] text-slate-500 mt-0.5">反包难度大</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 级涨跌分布柱状图 -->
+      <div class="glass-card p-5">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-sm font-bold text-white">全市场 11 级涨跌幅度分布图</span>
+          <span class="text-xs text-slate-400">下跌中枢集中在 -3% ~ 0% 区间</span>
+        </div>
+        <div class="grid grid-cols-11 gap-1.5 items-end h-32 pt-4 px-2" id="distribution-bars">
+          <!-- 动态渲染柱子 -->
+        </div>
+      </div>
+
+      <!-- 下半部分：大幅回撤榜 (大面榜) + 9:25 竞价抢筹榜 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <!-- 大面榜 -->
+        <div class="glass-card p-5">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-sm font-bold text-rose-400 flex items-center space-x-1.5">
+              <span>⚠️ 日内大幅回撤大面榜 (最高点回撤 Top 6)</span>
+            </span>
+            <span class="text-xs text-slate-500">短线防守预警</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead>
+                <tr class="text-slate-400 border-b border-white/5 pb-2">
+                  <th class="py-2">代码 / 名称</th>
+                  <th class="py-2 text-right">日内最大回撤</th>
+                  <th class="py-2 text-right">最新价</th>
+                  <th class="py-2 text-right">今日涨跌</th>
+                  <th class="py-2 text-right">行业特征</th>
+                </tr>
+              </thead>
+              <tbody id="drawdowns-table-body" class="divide-y divide-white/5">
+                <!-- 动态填充 -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 9:25 竞价封单额榜 -->
+        <div class="glass-card p-5">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-sm font-bold text-amber-400 flex items-center space-x-1.5">
+              <span>⚡ 9:25 集合竞价大单封单榜 (主力意图)</span>
+            </span>
+            <span class="text-xs text-slate-500">竞价定调方向</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead>
+                <tr class="text-slate-400 border-b border-white/5 pb-2">
+                  <th class="py-2">代码 / 名称</th>
+                  <th class="py-2 text-right">涨停委买额</th>
+                  <th class="py-2 text-right">竞价价格</th>
+                  <th class="py-2 text-right">竞价涨幅</th>
+                  <th class="py-2 text-right">盘面形态</th>
+                </tr>
+              </thead>
+              <tbody id="bidding-table-body" class="divide-y divide-white/5">
+                <!-- 动态填充 -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 2: 复盘啦 ==================== -->
+    <section id="view-fupanla" class="tab-content space-y-6">
+      <!-- 连板天梯矩阵 -->
+      <div class="glass-card p-5">
+        <div class="flex justify-between items-center mb-4">
+          <div>
+            <span class="text-sm font-bold text-white">连板空间天梯矩阵 (空间高度 4 板)</span>
+            <span class="text-xs text-slate-400 ml-2">市场高度标杆由 AI影视、文化出版与水产预制菜共创</span>
+          </div>
+          <span class="text-xs px-2.5 py-1 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">最高 4 连板</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4" id="ladder-container">
+          <!-- 动态渲染连板阶梯 -->
+        </div>
+      </div>
+
+      <!-- 盘面梳理时间线动态流 (09:25~15:00) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- 时间线 -->
+        <div class="lg:col-span-2 glass-card p-5">
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-sm font-bold text-white flex items-center space-x-2">
+              <span>⏱️ 盘面动态梳理时间线流 (09:25 ~ 15:00)</span>
+            </span>
+            <span class="text-xs text-slate-500">按盘中关键转折点排序</span>
+          </div>
+          <div class="relative pl-6 space-y-5 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-white/10" id="timeline-container">
+            <!-- 动态渲染时间线节点 -->
+          </div>
+        </div>
+
+        <!-- 题材风口卡片 -->
+        <div class="glass-card p-5 space-y-4">
+          <div class="flex justify-between items-center">
+            <span class="text-sm font-bold text-white">🔥 当日风口题材卡片</span>
+            <span class="text-xs text-slate-400">主力聚焦</span>
+          </div>
+          <div class="space-y-3" id="hot-sectors-container">
+            <!-- 动态渲染风口题材 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 3: 百日新高 ==================== -->
+    <section id="view-newhigh" class="tab-content space-y-6">
+      <!-- 顶部统计与行业分布 -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <!-- 统计核心 -->
+        <div class="glass-card p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-slate-400 font-medium">全市场创 100 日新高个股数</span>
+            <div class="text-4xl font-black text-white font-mono mt-2" id="newhigh-total">133 <span class="text-sm font-normal text-slate-400">只</span></div>
+          </div>
+          <div class="pt-4 border-t border-white/5 mt-4">
+            <div class="flex justify-between items-center">
+              <span class="text-xs text-slate-400">今日首次突破创百日新高</span>
+              <span class="text-xl font-bold font-mono text-rose-400 flex items-center space-x-1">
+                <span>+38</span>
+                <span class="badge-new">NEW</span>
+              </span>
+            </div>
+            <div class="text-[11px] text-slate-500 mt-1">突破个股占比 28.5%，多集中在防御性红利资产与三季报高确定性标的。</div>
+          </div>
+        </div>
+
+        <!-- 行业分布 Donut 环形统计 -->
+        <div class="lg:col-span-2 glass-card p-5">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-sm font-bold text-white">百日新高行业分布 (最扎堆前 7 大方向)</span>
+            <span class="text-xs text-slate-400">红利防御 + 业绩成长双轮驱动</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="newhigh-industry-grid">
+            <!-- 动态渲染行业分布胶囊 -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 百日新高代表性股票列表 (带专属红色 New 标签) -->
+      <div class="glass-card p-5">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-sm font-bold text-white">百日新高代表性核心股票名单 (红底白字 New 为今日首次突破)</span>
+          <div class="flex space-x-2 text-xs">
+            <span class="px-2 py-1 rounded bg-rose-500/10 text-rose-400 border border-rose-500/30">共收录 133 只</span>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs">
+            <thead>
+              <tr class="text-slate-400 border-b border-white/5 pb-2">
+                <th class="py-2">代码 / 名称</th>
+                <th class="py-2 text-right">最新价</th>
+                <th class="py-2 text-right">今日涨幅</th>
+                <th class="py-2 text-right">近20日累计涨幅</th>
+                <th class="py-2 text-right">所属行业</th>
+                <th class="py-2 text-right">核心驱动题材</th>
+              </tr>
+            </thead>
+            <tbody id="newhigh-table-body" class="divide-y divide-white/5">
+              <!-- 动态填充 -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 4: 区间统计 ==================== -->
+    <section id="view-period" class="tab-content space-y-6">
+      <!-- 周期选择器 -->
+      <div class="glass-card p-4 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <span class="text-xs text-slate-400 mr-2">统计周期切换:</span>
+          <button onclick="switchPeriod('3d')" id="btn-period-3d" class="period-btn active px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500/20 text-cyan-400 border border-cyan-500/40">近 3 日</button>
+          <button onclick="switchPeriod('5d')" id="btn-period-5d" class="period-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 text-slate-400 hover:text-white border border-transparent">近 5 日</button>
+          <button onclick="switchPeriod('10d')" id="btn-period-10d" class="period-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 text-slate-400 hover:text-white border border-transparent">近 10 日</button>
+          <button onclick="switchPeriod('20d')" id="btn-period-20d" class="period-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 text-slate-400 hover:text-white border border-transparent">近 20 日</button>
+        </div>
+        <span class="text-xs text-slate-500 hidden sm:block">通达信日线极速切片计算 · 过滤停牌噪声</span>
+      </div>
+
+      <!-- 左右分栏：领涨题材榜 + 大牛股 Top 50 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- 领涨题材榜 -->
+        <div class="glass-card p-5">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-sm font-bold text-white" id="period-sector-title">近 3 日领涨题材排行榜 (Sector Rank)</span>
+            <span class="text-xs text-slate-500">区间累计等权平均</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead>
+                <tr class="text-slate-400 border-b border-white/5 pb-2">
+                  <th class="py-2">排名</th>
+                  <th class="py-2">题材板块名称</th>
+                  <th class="py-2 text-right">区间涨幅</th>
+                  <th class="py-2 text-right">区间涨停家数</th>
+                  <th class="py-2 text-right">领涨龙头</th>
+                </tr>
+              </thead>
+              <tbody id="period-sectors-body" class="divide-y divide-white/5">
+                <!-- 动态填充 -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 大牛股 Top 50 -->
+        <div class="glass-card p-5">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-sm font-bold text-white" id="period-stock-title">近 3 日区间大牛股 Top 50 (Leading Stocks)</span>
+            <span class="text-xs text-slate-500">阻力最小突破路径</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead>
+                <tr class="text-slate-400 border-b border-white/5 pb-2">
+                  <th class="py-2">代码 / 名称</th>
+                  <th class="py-2 text-right">区间累计涨幅</th>
+                  <th class="py-2 text-right">区间振幅</th>
+                  <th class="py-2 text-right">换手率</th>
+                  <th class="py-2 text-right">涨停天数</th>
+                  <th class="py-2 text-right">创百日新高</th>
+                </tr>
+              </thead>
+              <tbody id="period-stocks-body" class="divide-y divide-white/5">
+                <!-- 动态填充 -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. 数据绑定与交互逻辑驱动脚本 -->
+  <script>
+    let globalData = null;
+    let currentPeriod = '3d';
+
+    async function loadData() {
+      try {
+        const res = await fetch('/api/market/kaipanla?date=2026-10-14');
+        if (res.ok) {
+          globalData = await res.json();
+          renderAll();
+        } else {
+          // 备选路径
+          const res2 = await fetch('/data/extra_intelligence/kaipanla_data.json');
+          if (res2.ok) {
+            globalData = await res2.json();
+            renderAll();
+          }
+        }
+      } catch (e) {
+        console.error("加载开盘啦数据失败:", e);
+      }
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.nav-tab-btn').forEach(el => {
+        el.classList.remove('active');
+        el.classList.add('text-slate-400');
+      });
+
+      const target = document.getElementById('view-' + tabId);
+      const btn = document.getElementById('tab-btn-' + tabId);
+      if (target) target.classList.add('active');
+      if (btn) {
+        btn.classList.add('active');
+        btn.classList.remove('text-slate-400');
+      }
+    }
+
+    function switchPeriod(p) {
+      currentPeriod = p;
+      document.querySelectorAll('.period-btn').forEach(btn => {
+        btn.className = 'period-btn px-3 py-1.5 rounded-lg text-xs font-semibold bg-white/5 text-slate-400 hover:text-white border border-transparent';
+      });
+      const activeBtn = document.getElementById('btn-period-' + p);
+      if (activeBtn) {
+        activeBtn.className = 'period-btn active px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500/20 text-cyan-400 border border-cyan-500/40';
+      }
+      renderPeriodView();
+    }
+
+    function renderAll() {
+      if (!globalData) return;
+      renderSentimentView();
+      renderFupanlaView();
+      renderNewHighView();
+      renderPeriodView();
+    }
+
+    function renderSentimentView() {
+      const s = globalData.market_sentiment;
+      if (!s) return;
+
+      // 11级分布柱状图
+      const barContainer = document.getElementById('distribution-bars');
+      if (barContainer && s.distribution_11_bars) {
+        const maxCount = Math.max(...s.distribution_11_bars.map(b => b.count));
+        barContainer.innerHTML = s.distribution_11_bars.map(b => {
+          const heightPercent = Math.max(10, Math.round((b.count / maxCount) * 100));
+          return `
+            <div class="flex flex-col items-center h-full justify-end group">
+              <span class="text-[10px] font-mono text-slate-400 mb-1 opacity-80 group-hover:opacity-100">${b.count}</span>
+              <div class="w-full rounded-t transition-all duration-300" style="height: ${heightPercent}%; background-color: ${b.color};"></div>
+              <span class="text-[10px] text-slate-400 mt-2 truncate w-full text-center" title="${b.label}">${b.label}</span>
+            </div>
+          `;
+        }).join('');
+      }
+
+      // 大面榜
+      const ddBody = document.getElementById('drawdowns-table-body');
+      if (ddBody && s.sharp_drawdowns) {
+        ddBody.innerHTML = s.sharp_drawdowns.map(row => `
+          <tr class="hover:bg-white/5 transition">
+            <td class="py-2.5">
+              <div class="font-bold text-slate-200">${row.name}</div>
+              <div class="font-mono text-slate-500 text-[11px]">${row.code}</div>
+            </td>
+            <td class="py-2.5 text-right font-mono font-bold text-emerald-400">${row.max_drawdown.toFixed(2)}%</td>
+            <td class="py-2.5 text-right font-mono text-slate-300">¥${row.price.toFixed(2)}</td>
+            <td class="py-2.5 text-right font-mono ${row.close_pct >= 0 ? 'text-rose-400' : 'text-emerald-400'}">${row.close_pct > 0 ? '+' : ''}${row.close_pct.toFixed(2)}%</td>
+            <td class="py-2.5 text-right text-slate-400">${row.industry}</td>
+          </tr>
+        `).join('');
+      }
+
+      // 9:25 竞价榜
+      const bidBody = document.getElementById('bidding-table-body');
+      if (bidBody && s.bidding_rank) {
+        bidBody.innerHTML = s.bidding_rank.map(row => `
+          <tr class="hover:bg-white/5 transition">
+            <td class="py-2.5">
+              <div class="font-bold text-slate-200">${row.name}</div>
+              <div class="font-mono text-slate-500 text-[11px]">${row.code}</div>
+            </td>
+            <td class="py-2.5 text-right font-mono font-bold text-amber-400">${row.amount.toFixed(2)} 亿</td>
+            <td class="py-2.5 text-right font-mono text-slate-300">¥${row.price.toFixed(2)}</td>
+            <td class="py-2.5 text-right font-mono text-rose-400">+${row.pct.toFixed(2)}%</td>
+            <td class="py-2.5 text-right">
+              <span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/20 text-[10px]">${row.status}</span>
+            </td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    function renderFupanlaView() {
+      const f = globalData.fupanla;
+      if (!f) return;
+
+      // 连板阶梯
+      const ladderBox = document.getElementById('ladder-container');
+      if (ladderBox && f.ladder) {
+        ladderBox.innerHTML = f.ladder.ranks.map(r => `
+          <div class="p-3.5 rounded-xl bg-slate-900/60 border border-white/5 space-y-2.5">
+            <div class="flex justify-between items-center pb-2 border-b border-white/5">
+              <span class="font-bold text-white text-sm">${r.level}</span>
+              <span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-400 text-xs font-mono font-bold">${r.count} 家</span>
+            </div>
+            <div class="space-y-1.5">
+              ${r.stocks.map(stk => `
+                <div class="p-2 rounded bg-white/5 hover:bg-white/10 transition flex justify-between items-center">
+                  <div>
+                    <span class="font-bold text-slate-200 text-xs">${stk.name}</span>
+                    <span class="text-[10px] text-slate-500 ml-1">${stk.form || ''}</span>
+                    <div class="text-[10px] text-slate-400">${stk.industry}</div>
+                  </div>
+                  <span class="text-[10px] text-rose-400 text-right max-w-[90px] truncate" title="${stk.desc}">${stk.desc}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // 时间线
+      const tlBox = document.getElementById('timeline-container');
+      if (tlBox && f.timeline) {
+        tlBox.innerHTML = f.timeline.map(item => `
+          <div class="relative group">
+            <span class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full border-2 border-[#0b0f17] ${item.badge_color} shadow-md shadow-red-500/20"></span>
+            <div class="flex items-center space-x-2">
+              <span class="font-mono font-bold text-xs text-cyan-400">${item.time}</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-semibold text-white ${item.badge_color}">${item.tag}</span>
+              <span class="font-bold text-slate-200 text-xs">${item.title}</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-1 pl-1 leading-relaxed">${item.desc}</p>
+          </div>
+        `).join('');
+      }
+
+      // 风口题材
+      const hsBox = document.getElementById('hot-sectors-container');
+      if (hsBox && f.hot_sectors) {
+        hsBox.innerHTML = f.hot_sectors.map(sec => `
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-white/5 hover:border-white/15 transition flex justify-between items-center">
+            <div>
+              <div class="font-bold text-slate-200 text-xs">${sec.name}</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">领涨龙头: <span class="text-rose-400 font-semibold">${sec.leader}</span></div>
+            </div>
+            <div class="text-right">
+              <div class="font-mono font-bold text-rose-400 text-xs">${sec.zt_count} 只涨停</div>
+              <div class="font-mono text-slate-500 text-[10px] mt-0.5">成交 ${sec.total_turnover}</div>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    function renderNewHighView() {
+      const nh = globalData.new_high_100;
+      if (!nh) return;
+
+      // 行业胶囊
+      const indGrid = document.getElementById('newhigh-industry-grid');
+      if (indGrid && nh.industry_distribution) {
+        indGrid.innerHTML = nh.industry_distribution.map(item => `
+          <div class="p-3 rounded-xl bg-slate-900/60 border border-white/5 flex flex-col justify-between">
+            <span class="text-xs text-slate-400 truncate">${item.industry}</span>
+            <div class="flex justify-between items-baseline mt-2">
+              <span class="text-base font-bold font-mono text-white">${item.count} 只</span>
+              <span class="text-[11px] font-mono text-rose-400">+${item.new_count} <span class="text-[9px] badge-new">New</span></span>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // 个股表格 (带 New 标签)
+      const nhBody = document.getElementById('newhigh-table-body');
+      if (nhBody && nh.stocks) {
+        nhBody.innerHTML = nh.stocks.map(stk => `
+          <tr class="hover:bg-white/5 transition">
+            <td class="py-2.5">
+              <div class="flex items-center space-x-1.5">
+                <span class="font-bold text-slate-200">${stk.name}</span>
+                ${stk.is_new ? '<span class="badge-new">NEW</span>' : ''}
+              </div>
+              <div class="font-mono text-slate-500 text-[11px]">${stk.code}</div>
+            </td>
+            <td class="py-2.5 text-right font-mono text-slate-200">¥${stk.price.toFixed(2)}</td>
+            <td class="py-2.5 text-right font-mono font-bold ${stk.pct_change >= 0 ? 'text-rose-400' : 'text-emerald-400'}">
+              ${stk.pct_change >= 0 ? '+' : ''}${stk.pct_change.toFixed(2)}%
+            </td>
+            <td class="py-2.5 text-right font-mono font-bold text-rose-400">+${stk.pct_20d.toFixed(1)}%</td>
+            <td class="py-2.5 text-right text-slate-400">${stk.industry}</td>
+            <td class="py-2.5 text-right text-slate-300">${stk.concept}</td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    function renderPeriodView() {
+      const ps = globalData.period_statistics;
+      if (!ps || !ps.periods || !ps.periods[currentPeriod]) return;
+
+      const pData = ps.periods[currentPeriod];
+
+      document.getElementById('period-sector-title').innerText = `${pData.label} 领涨题材排行榜 (Sector Rank)`;
+      document.getElementById('period-stock-title').innerText = `${pData.label} 区间大牛股 Top 50 (Leading Stocks)`;
+
+      // 题材排行
+      const sBody = document.getElementById('period-sectors-body');
+      if (sBody && pData.top_sectors) {
+        sBody.innerHTML = pData.top_sectors.map((sec, idx) => `
+          <tr class="hover:bg-white/5 transition">
+            <td class="py-2.5 font-mono text-slate-500 text-xs">${idx + 1}</td>
+            <td class="py-2.5 font-bold text-slate-200">${sec.name}</td>
+            <td class="py-2.5 text-right font-mono font-bold text-rose-400">+${sec.pct.toFixed(2)}%</td>
+            <td class="py-2.5 text-right font-mono text-amber-400">${sec.zt_count} 只涨停</td>
+            <td class="py-2.5 text-right font-semibold text-rose-300">${sec.leader}</td>
+          </tr>
+        `).join('');
+      }
+
+      // 大牛股 Top 50
+      const stBody = document.getElementById('period-stocks-body');
+      if (stBody && pData.top_stocks) {
+        stBody.innerHTML = pData.top_stocks.map(stk => `
+          <tr class="hover:bg-white/5 transition">
+            <td class="py-2.5">
+              <div class="flex items-center space-x-1.5">
+                <span class="font-bold text-slate-200">${stk.name}</span>
+                ${stk.is_new_high ? '<span class="badge-new">新高</span>' : ''}
+              </div>
+              <div class="font-mono text-slate-500 text-[11px]">${stk.code} · ${stk.industry}</div>
+            </td>
+            <td class="py-2.5 text-right font-mono font-bold text-rose-400">+${stk.pct.toFixed(2)}%</td>
+            <td class="py-2.5 text-right font-mono text-slate-300">${stk.amplitude.toFixed(1)}%</td>
+            <td class="py-2.5 text-right font-mono text-slate-300">${stk.turnover.toFixed(1)}%</td>
+            <td class="py-2.5 text-right font-mono text-amber-400 font-bold">${stk.zt_days} 天</td>
+            <td class="py-2.5 text-right">
+              ${stk.is_new_high ? '<span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 font-semibold text-[10px]">是</span>' : '<span class="text-slate-500 text-[10px]">否</span>'}
+            </td>
+          </tr>
+        `).join('');
+      }
+    }
+
+    // 页面加载触发
+    loadData();
+  </script>
+</body>
+</html>
