@@ -138,6 +138,10 @@ export async function onRequest(context) {
   } else if (path === '/api/market/period-statistics') {
     const kpl = await getStaticJson('/data/extra_intelligence/kaipanla_data.json', {});
     respData = kpl.period_statistics || {};
+  } else if (path === '/api/market/market_history') {
+    respData = await getStaticJson('/data/extra_intelligence/market_history.json', { data: [] });
+  } else if (path === '/api/market/emotion-history') {
+    respData = await getStaticJson('/data/extra_intelligence/market_emotion_history.json', { items: [] });
   } else {
     const cleanPath = path.replace('/api/', '').replace(/\//g, '_');
     respData = await getStaticJson(`/data/extra_intelligence/${cleanPath}.json`, {});

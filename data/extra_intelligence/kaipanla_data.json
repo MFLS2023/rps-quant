@@ -1,16 +1,17 @@
 {
   "date": "2026-10-14",
-  "updated_at": "2026-10-14 20:25:08",
   "market_sentiment": {
     "date": "2026-10-14",
     "shanghai_index": {
       "point": 3767.23,
+      "diff": -33.64,
       "pct_change": -0.88,
-      "turnover": 6120.5
+      "turnover_yi": 6120.5
     },
     "sentiment_score": 38,
-    "sentiment_status": "震荡发酵",
-    "sentiment_label": "弱势震荡·防守为主",
+    "sentiment_status": "弱势震荡",
+    "sentiment_eval": "弱势分歧",
+    "sentiment_desc": "当前市场处于弱势震荡防守期，连板晋级率不高，操作宜以控制仓位和低吸主线为主。",
     "up_count": 978,
     "down_count": 4496,
     "flat_count": 125,
@@ -21,6 +22,32 @@
     "total_turnover": 14265.0,
     "turnover_change_pct": -15.54,
     "turnover_diff": -2625.0,
+    "gauge": {
+      "score": 38,
+      "label": "综合强度",
+      "ranges": [
+        {
+          "min": 0,
+          "max": 25,
+          "text": "冰点极值"
+        },
+        {
+          "min": 25,
+          "max": 50,
+          "text": "弱势分歧"
+        },
+        {
+          "min": 50,
+          "max": 75,
+          "text": "情绪平衡"
+        },
+        {
+          "min": 75,
+          "max": 100,
+          "text": "见顶高潮"
+        }
+      ]
+    },
     "distribution_11_bars": [
       {
         "label": "跌停",
@@ -83,775 +110,1732 @@
         "title": "今日涨停破板率",
         "value": "40.00%",
         "eval": "高",
-        "status_color": "text-emerald-500",
-        "desc": "全天炸板24家，连板接力意愿受压"
+        "color": "text-rose-400",
+        "desc": "炸板 24 家，接力情绪受压"
       },
       {
         "title": "昨日涨停今表现",
         "value": "+0.09%",
         "eval": "低",
-        "status_color": "text-yellow-500",
-        "desc": "隔日溢价极微，短线赚钱效应偏弱"
+        "color": "text-yellow-400",
+        "desc": "连板淘汰剧烈，赚钱效应偏弱"
       },
       {
         "title": "昨日连板今表现",
         "value": "+0.82%",
         "eval": "低",
-        "status_color": "text-yellow-500",
-        "desc": "高位连板开始分化，淘汰赛加剧"
+        "color": "text-yellow-400",
+        "desc": "高位股明显分化，追高风险加剧"
       },
       {
         "title": "昨日破板今表现",
         "value": "-0.73%",
         "eval": "中",
-        "status_color": "text-emerald-500",
-        "desc": "昨炸板个股反包概率较低"
+        "color": "text-emerald-400",
+        "desc": "反包难度大，割肉盘增加"
       }
     ],
-    "sharp_drawdowns": [
+    "ladder_tiers": {
+      "first_board": {
+        "count": 21,
+        "rate": "--",
+        "eval": "--"
+      },
+      "second_board": {
+        "count": 11,
+        "rate": "16%",
+        "eval": "中"
+      },
+      "third_board": {
+        "count": 1,
+        "rate": "20%",
+        "eval": "低"
+      },
+      "fourth_board": {
+        "count": 3,
+        "rate": "60%",
+        "eval": "高"
+      },
+      "high_board": {
+        "count": 0,
+        "rate": "0%",
+        "eval": "低"
+      }
+    },
+    "consecutive_intensity": {
+      "intensity": 38,
+      "max_drawdown_count": 12,
+      "note": "连板强度>75代表情绪过热，<25代表过冷"
+    },
+    "drawdowns_top": [
       {
         "code": "605136",
         "name": "丽人丽妆",
+        "pct_change": -8.93,
         "max_drawdown": -17.2,
-        "close_pct": -7.3,
         "price": 9.45,
-        "industry": "化妆品/电商",
-        "tag": "天地板诱多"
+        "industry": "电子商务 / 平台经济"
       },
       {
         "code": "300857",
         "name": "美农生物",
+        "pct_change": -4.8,
         "max_drawdown": -15.25,
-        "close_pct": -4.8,
         "price": 14.2,
-        "industry": "农林牧渔",
-        "tag": "冲高回落"
+        "industry": "农林牧渔 / 饲料"
+      },
+      {
+        "code": "603188",
+        "name": "亚邦股份",
+        "pct_change": -5.68,
+        "max_drawdown": -14.31,
+        "price": 4.15,
+        "industry": "分散染料 / 化工"
+      },
+      {
+        "code": "600303",
+        "name": "曙光股份",
+        "pct_change": -5.45,
+        "max_drawdown": -14.05,
+        "price": 3.42,
+        "industry": "汽车零部件 / 振兴东北"
       },
       {
         "code": "002692",
         "name": "远程股份",
+        "pct_change": -6.1,
         "max_drawdown": -14.8,
-        "close_pct": -6.1,
         "price": 4.52,
-        "industry": "电网设备",
-        "tag": "前期高位获利兑现"
+        "industry": "电气设备 / 电网"
       },
       {
         "code": "000509",
         "name": "华塑控股",
+        "pct_change": -5.2,
         "max_drawdown": -13.5,
-        "close_pct": -5.2,
         "price": 3.88,
-        "industry": "电子元器件",
-        "tag": "假突破杀跌"
-      },
-      {
-        "code": "603103",
-        "name": "峦峰传媒",
-        "max_drawdown": -12.9,
-        "close_pct": -9.95,
-        "price": 12.1,
-        "industry": "文化传媒",
-        "tag": "触跌停出货"
-      },
-      {
-        "code": "002077",
-        "name": "大港股份",
-        "max_drawdown": -11.8,
-        "close_pct": -3.5,
-        "price": 15.6,
-        "industry": "芯片半导体",
-        "tag": "午后炸板杀跌"
+        "industry": "电子元器件"
       }
     ],
-    "bidding_rank": [
-      {
-        "code": "605189",
-        "name": "富春染织",
-        "amount": 14.3,
-        "price": 16.5,
-        "pct": 10.0,
-        "industry": "纺织制造",
-        "status": "一字涨停"
-      },
-      {
-        "code": "000530",
-        "name": "冰山冷热",
-        "amount": 10.88,
-        "price": 5.48,
-        "pct": 10.04,
-        "industry": "冷链物流",
-        "status": "一字涨停2板"
-      },
-      {
-        "code": "002860",
-        "name": "星帅尔",
-        "amount": 4.97,
-        "price": 11.23,
-        "pct": 9.99,
-        "industry": "家电零部件",
-        "status": "大单一字"
-      },
-      {
-        "code": "002696",
-        "name": "百洋股份",
-        "amount": 3.85,
-        "price": 6.38,
-        "pct": 10.0,
-        "industry": "水产品/预制菜",
-        "status": "一字涨停4板"
-      },
-      {
-        "code": "002343",
-        "name": "慈文传媒",
-        "amount": 3.2,
-        "price": 8.78,
-        "pct": 10.03,
-        "industry": "AI影视",
-        "status": "高开秒板4板"
-      }
-    ]
+    "direction_benchmarks": {
+      "up": [
+        {
+          "sector": "水产品",
+          "code": "002696",
+          "name": "百洋股份",
+          "pct_change": 10.05
+        },
+        {
+          "sector": "AI视频",
+          "code": "002343",
+          "name": "慈文传媒",
+          "pct_change": 10.05
+        },
+        {
+          "sector": "版权",
+          "code": "603096",
+          "name": "新经典",
+          "pct_change": 10.01
+        }
+      ],
+      "down": [
+        {
+          "sector": "电气设备",
+          "code": "002692",
+          "name": "远程股份",
+          "pct_change": -9.94
+        },
+        {
+          "sector": "电子商务",
+          "code": "605136",
+          "name": "丽人丽妆",
+          "pct_change": -8.93
+        },
+        {
+          "sector": "汽车整车",
+          "code": "600418",
+          "name": "江淮汽车",
+          "pct_change": -8.62
+        }
+      ]
+    },
+    "weights_performance": {
+      "up": [
+        {
+          "sector": "煤炭",
+          "sector_pct": 0.58,
+          "leader_name": "晋控煤业",
+          "leader_pct": 5.57
+        },
+        {
+          "sector": "石油石化",
+          "sector_pct": 0.06,
+          "leader_name": "中海油服",
+          "leader_pct": 6.56
+        },
+        {
+          "sector": "证券",
+          "sector_pct": 0.04,
+          "leader_name": "中国银河",
+          "leader_pct": 1.45
+        }
+      ],
+      "down": [
+        {
+          "sector": "面板",
+          "sector_pct": -2.74,
+          "leader_name": "精测电子",
+          "leader_pct": -5.28
+        },
+        {
+          "sector": "稀土永磁",
+          "sector_pct": -2.59,
+          "leader_name": "有研新材",
+          "leader_pct": -10.0
+        },
+        {
+          "sector": "芯片",
+          "sector_pct": -2.43,
+          "leader_name": "东山精密",
+          "leader_pct": -5.97
+        }
+      ]
+    },
+    "stock_lists": {
+      "bidding": [
+        {
+          "code": "605189",
+          "name": "富春染织",
+          "amount_str": "14.30亿",
+          "pct_change": 10.03,
+          "price": 14.81,
+          "sector": "机器人概念 / 三季报增长",
+          "tags": []
+        },
+        {
+          "code": "000530",
+          "name": "冰山冷热",
+          "amount_str": "10.88亿",
+          "pct_change": 9.95,
+          "price": 4.86,
+          "sector": "冰雪产业 / 算力",
+          "tags": [
+            "融",
+            "游资"
+          ]
+        },
+        {
+          "code": "002860",
+          "name": "星帅尔",
+          "amount_str": "4.97亿",
+          "pct_change": 10.01,
+          "price": 9.99,
+          "sector": "并购重组 / 光储充一体化",
+          "tags": [
+            "融"
+          ]
+        },
+        {
+          "code": "000823",
+          "name": "超声电子",
+          "amount_str": "4.21亿",
+          "pct_change": 9.99,
+          "price": 11.23,
+          "sector": "PCB / 通信",
+          "tags": [
+            "融",
+            "游资"
+          ]
+        },
+        {
+          "code": "002696",
+          "name": "百洋股份",
+          "amount_str": "4.16亿",
+          "pct_change": 10.05,
+          "price": 9.75,
+          "sector": "水产品 / 农业",
+          "tags": [
+            "游资"
+          ]
+        },
+        {
+          "code": "002552",
+          "name": "宝鼎科技",
+          "amount_str": "3.15亿",
+          "pct_change": 9.99,
+          "price": 16.51,
+          "sector": "覆铜板 / 通信",
+          "tags": []
+        },
+        {
+          "code": "600202",
+          "name": "哈空调",
+          "amount_str": "2.99亿",
+          "pct_change": 10.02,
+          "price": 5.49,
+          "sector": "专用设备 / 储能热管理",
+          "tags": [
+            "游资"
+          ]
+        },
+        {
+          "code": "001318",
+          "name": "阳光乳业",
+          "amount_str": "2.14亿",
+          "pct_change": 9.98,
+          "price": 12.34,
+          "sector": "乳业 / 食品饮料",
+          "tags": [
+            "游资"
+          ]
+        },
+        {
+          "code": "002343",
+          "name": "慈文传媒",
+          "amount_str": "1.99亿",
+          "pct_change": 9.65,
+          "price": 8.1,
+          "sector": "AI视频 / AI应用",
+          "tags": [
+            "游资"
+          ]
+        },
+        {
+          "code": "605136",
+          "name": "丽人丽妆",
+          "amount_str": "1.95亿",
+          "pct_change": 9.98,
+          "price": 9.45,
+          "sector": "电子商务 / 平台经济",
+          "tags": [
+            "游资"
+          ]
+        },
+        {
+          "code": "002639",
+          "name": "雪人集团",
+          "amount_str": "9645万",
+          "pct_change": 9.6,
+          "price": 6.85,
+          "sector": "冰雪产业 / 算力",
+          "tags": [
+            "融"
+          ]
+        },
+        {
+          "code": "000833",
+          "name": "粤桂股份",
+          "amount_str": "4928万",
+          "pct_change": 3.87,
+          "price": 7.25,
+          "sector": "化肥 / 硫化物",
+          "tags": [
+            "融"
+          ]
+        },
+        {
+          "code": "000668",
+          "name": "荣丰控股",
+          "amount_str": "3293万",
+          "pct_change": 10.02,
+          "price": 10.87,
+          "sector": "实控人变更 / 地产链",
+          "tags": [
+            "游资"
+          ]
+        },
+        {
+          "code": "002242",
+          "name": "九阳股份",
+          "amount_str": "2900万",
+          "pct_change": 2.94,
+          "price": 11.2,
+          "sector": "电子商务 / 小家电",
+          "tags": [
+            "融",
+            "游资"
+          ]
+        },
+        {
+          "code": "301010",
+          "name": "晶雪节能",
+          "amount_str": "2812万",
+          "pct_change": 18.4,
+          "price": 17.65,
+          "sector": "冰雪产业 / 体育产业",
+          "tags": [
+            "融"
+          ]
+        }
+      ],
+      "limit_up": [
+        {
+          "code": "002343",
+          "name": "慈文传媒",
+          "amount_str": "6.85亿",
+          "pct_change": 10.05,
+          "price": 8.1,
+          "sector": "AI视频 / AI应用",
+          "tags": [
+            "4板",
+            "游资"
+          ]
+        },
+        {
+          "code": "603096",
+          "name": "新经典",
+          "amount_str": "5.42亿",
+          "pct_change": 10.01,
+          "price": 18.78,
+          "sector": "版权 / 文化传媒",
+          "tags": [
+            "4板"
+          ]
+        },
+        {
+          "code": "002696",
+          "name": "百洋股份",
+          "amount_str": "4.16亿",
+          "pct_change": 10.05,
+          "price": 9.75,
+          "sector": "水产品 / 农业",
+          "tags": [
+            "4板",
+            "一字"
+          ]
+        },
+        {
+          "code": "603968",
+          "name": "醋化股份",
+          "amount_str": "3.80亿",
+          "pct_change": 10.01,
+          "price": 12.42,
+          "sector": "化工 / 精细化学品",
+          "tags": [
+            "3板"
+          ]
+        },
+        {
+          "code": "000823",
+          "name": "超声电子",
+          "amount_str": "12.3亿",
+          "pct_change": 9.99,
+          "price": 11.23,
+          "sector": "PCB / 三季报增长",
+          "tags": [
+            "2板",
+            "T字"
+          ]
+        },
+        {
+          "code": "000530",
+          "name": "冰山冷热",
+          "amount_str": "10.88亿",
+          "pct_change": 9.95,
+          "price": 4.86,
+          "sector": "冰雪产业 / 算力",
+          "tags": [
+            "2板",
+            "一字"
+          ]
+        },
+        {
+          "code": "601188",
+          "name": "龙江交通",
+          "amount_str": "2.85亿",
+          "pct_change": 10.03,
+          "price": 4.17,
+          "sector": "冰雪产业 / 交通运输",
+          "tags": [
+            "2板"
+          ]
+        },
+        {
+          "code": "000668",
+          "name": "荣丰控股",
+          "amount_str": "1.25亿",
+          "pct_change": 10.02,
+          "price": 10.87,
+          "sector": "实控人变更 / 房地产",
+          "tags": [
+            "2板",
+            "一字"
+          ]
+        },
+        {
+          "code": "002813",
+          "name": "路畅科技",
+          "amount_str": "3.90亿",
+          "pct_change": 10.01,
+          "price": 29.02,
+          "sector": "实控人变更 / 智能座舱",
+          "tags": [
+            "2板"
+          ]
+        },
+        {
+          "code": "002860",
+          "name": "星帅尔",
+          "amount_str": "4.97亿",
+          "pct_change": 10.01,
+          "price": 9.99,
+          "sector": "并购重组 / 光储充",
+          "tags": [
+            "2板",
+            "一字"
+          ]
+        },
+        {
+          "code": "002917",
+          "name": "金奥博",
+          "amount_str": "2.10亿",
+          "pct_change": 10.02,
+          "price": 9.11,
+          "sector": "并购重组 / 民爆",
+          "tags": [
+            "2板"
+          ]
+        },
+        {
+          "code": "600391",
+          "name": "航发科技",
+          "amount_str": "4.50亿",
+          "pct_change": 10.0,
+          "price": 23.43,
+          "sector": "航空发动机 / 军工",
+          "tags": [
+            "2板"
+          ]
+        },
+        {
+          "code": "001318",
+          "name": "阳光乳业",
+          "amount_str": "2.14亿",
+          "pct_change": 9.98,
+          "price": 12.34,
+          "sector": "乳业 / 食品饮料",
+          "tags": [
+            "2板",
+            "T字"
+          ]
+        },
+        {
+          "code": "600202",
+          "name": "哈空调",
+          "amount_str": "2.99亿",
+          "pct_change": 10.02,
+          "price": 5.49,
+          "sector": "专用设备 / 储能热管理",
+          "tags": [
+            "2板",
+            "T字"
+          ]
+        },
+        {
+          "code": "600847",
+          "name": "万里股份",
+          "amount_str": "1.80亿",
+          "pct_change": 9.96,
+          "price": 8.72,
+          "sector": "锂电池 / 汽车零部件",
+          "tags": [
+            "2板"
+          ]
+        },
+        {
+          "code": "002552",
+          "name": "宝鼎科技",
+          "amount_str": "3.15亿",
+          "pct_change": 9.99,
+          "price": 16.51,
+          "sector": "覆铜板 / 三季报增长",
+          "tags": [
+            "2板",
+            "一字"
+          ]
+        },
+        {
+          "code": "605189",
+          "name": "富春染织",
+          "amount_str": "14.3亿",
+          "pct_change": 10.03,
+          "price": 14.81,
+          "sector": "三季报增长 / 纺织",
+          "tags": [
+            "2板",
+            "一字"
+          ]
+        },
+        {
+          "code": "000601",
+          "name": "韶能股份",
+          "amount_str": "2.65亿",
+          "pct_change": 10.0,
+          "price": 4.51,
+          "sector": "三季报增长 / 电力",
+          "tags": [
+            "2板"
+          ]
+        },
+        {
+          "code": "603533",
+          "name": "掌阅科技",
+          "amount_str": "9.20亿",
+          "pct_change": 10.02,
+          "price": 22.15,
+          "sector": "AI视频 / 知识产权",
+          "tags": [
+            "7天4板"
+          ]
+        },
+        {
+          "code": "603598",
+          "name": "引力传媒",
+          "amount_str": "4.10亿",
+          "pct_change": 10.01,
+          "price": 16.05,
+          "sector": "文化传媒 / 字节概念",
+          "tags": [
+            "首板"
+          ]
+        },
+        {
+          "code": "601811",
+          "name": "新华文轩",
+          "amount_str": "3.80亿",
+          "pct_change": 10.01,
+          "price": 14.28,
+          "sector": "出版传媒 / 央国企",
+          "tags": [
+            "4天3板"
+          ]
+        }
+      ],
+      "broken": [
+        {
+          "code": "605136",
+          "name": "丽人丽妆",
+          "amount_str": "8.95亿",
+          "pct_change": -8.93,
+          "price": 9.45,
+          "sector": "电子商务 / 平台经济",
+          "tags": [
+            "炸板回撤"
+          ]
+        },
+        {
+          "code": "300857",
+          "name": "美农生物",
+          "amount_str": "3.20亿",
+          "pct_change": -4.8,
+          "price": 14.2,
+          "sector": "农林牧渔 / 饲料",
+          "tags": [
+            "炸板"
+          ]
+        },
+        {
+          "code": "603188",
+          "name": "亚邦股份",
+          "amount_str": "2.80亿",
+          "pct_change": -5.68,
+          "price": 4.15,
+          "sector": "精细化工 / 染料",
+          "tags": [
+            "炸板"
+          ]
+        },
+        {
+          "code": "605577",
+          "name": "龙版传媒",
+          "amount_str": "11.2亿",
+          "pct_change": -7.5,
+          "price": 18.2,
+          "sector": "AI应用 / 出版",
+          "tags": [
+            "高位炸板"
+          ]
+        },
+        {
+          "code": "002692",
+          "name": "远程股份",
+          "amount_str": "4.50亿",
+          "pct_change": -6.1,
+          "price": 4.52,
+          "sector": "电网设备 / 特高压",
+          "tags": [
+            "炸板回落"
+          ]
+        }
+      ],
+      "limit_down": [
+        {
+          "code": "002077",
+          "name": "大港股份",
+          "amount_str": "5.60亿",
+          "pct_change": -10.0,
+          "price": 15.6,
+          "sector": "半导体 / 芯片封测",
+          "tags": [
+            "跌停"
+          ]
+        },
+        {
+          "code": "603103",
+          "name": "横店影视",
+          "amount_str": "3.20亿",
+          "pct_change": -9.95,
+          "price": 12.1,
+          "sector": "影视院线 / 传媒",
+          "tags": [
+            "跌停"
+          ]
+        },
+        {
+          "code": "600241",
+          "name": "时代万恒",
+          "amount_str": "4.10亿",
+          "pct_change": -10.01,
+          "price": 8.81,
+          "sector": "锂电池 / 新能源",
+          "tags": [
+            "高位补跌"
+          ]
+        },
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "amount_str": "7.80亿",
+          "pct_change": -9.98,
+          "price": 6.13,
+          "sector": "文化传媒 / 知识产权",
+          "tags": [
+            "退潮核按钮"
+          ]
+        }
+      ]
+    }
   },
   "fupanla": {
     "date": "2026-10-14",
+    "hot_sectors": [
+      {
+        "name": "三季报增长",
+        "count": 4,
+        "turnover_str": "21亿",
+        "desc": "业绩大幅预增掀涨停潮，资金抱团业绩高确定性标的",
+        "stocks": [
+          "超声电子",
+          "宝鼎科技",
+          "富春染织",
+          "韶能股份"
+        ]
+      },
+      {
+        "name": "AI视频",
+        "count": 3,
+        "turnover_str": "35亿",
+        "desc": "AI工具与视频生成模型重磅突破，短剧与多模态领涨",
+        "stocks": [
+          "慈文传媒",
+          "掌阅科技",
+          "果麦文化"
+        ]
+      },
+      {
+        "name": "版权",
+        "count": 3,
+        "turnover_str": "31亿",
+        "desc": "IP资产重估，出版与数字版权资产逆市走强",
+        "stocks": [
+          "新经典",
+          "新华文轩",
+          "读客文化"
+        ]
+      },
+      {
+        "name": "煤炭",
+        "count": 2,
+        "turnover_str": "24亿",
+        "desc": "高股息红利防御板块承接大盘分歧压力",
+        "stocks": [
+          "晋控煤业",
+          "平煤股份"
+        ]
+      },
+      {
+        "name": "创新药",
+        "count": 2,
+        "turnover_str": "17亿",
+        "desc": "海外授权合作与医保目录调整预期提振",
+        "stocks": [
+          "恒瑞医药",
+          "海欣股份"
+        ]
+      },
+      {
+        "name": "互动影游",
+        "count": 2,
+        "turnover_str": "14亿",
+        "desc": "游戏新品出海与虚拟人技术共振",
+        "stocks": [
+          "富春股份",
+          "引力传媒"
+        ]
+      },
+      {
+        "name": "冰雪产业",
+        "count": 2,
+        "turnover_str": "19亿",
+        "desc": "亚冬会临近政策利好密集催化",
+        "stocks": [
+          "冰山冷热",
+          "龙江交通",
+          "雪人集团"
+        ]
+      },
+      {
+        "name": "实控人变更",
+        "count": 2,
+        "turnover_str": "12亿",
+        "desc": "国资入主与优质资产注入预期",
+        "stocks": [
+          "荣丰控股",
+          "路畅科技"
+        ]
+      },
+      {
+        "name": "并购重组",
+        "count": 2,
+        "turnover_str": "28亿",
+        "desc": "并购六条政策催化重组借壳题材",
+        "stocks": [
+          "星帅尔",
+          "金奥博"
+        ]
+      }
+    ],
+    "ladder": [
+      {
+        "tier": "4板",
+        "count": 3,
+        "stocks": [
+          {
+            "code": "002343",
+            "name": "慈文传媒",
+            "time": "9:30",
+            "seal_type": "快速封板",
+            "theme": "AI视频",
+            "turnover": "6.85亿"
+          },
+          {
+            "code": "603096",
+            "name": "新经典",
+            "time": "9:30",
+            "seal_type": "放量封板",
+            "theme": "版权",
+            "turnover": "5.42亿"
+          },
+          {
+            "code": "002696",
+            "name": "百洋股份",
+            "time": "一字",
+            "seal_type": "一字板",
+            "theme": "水产品",
+            "turnover": "4.16亿"
+          }
+        ]
+      },
+      {
+        "tier": "3板",
+        "count": 1,
+        "stocks": [
+          {
+            "code": "603968",
+            "name": "醋化股份",
+            "time": "9:30",
+            "seal_type": "快速秒板",
+            "theme": "化工",
+            "turnover": "3.80亿"
+          }
+        ]
+      },
+      {
+        "tier": "2板",
+        "count": 11,
+        "stocks": [
+          {
+            "code": "000823",
+            "name": "超声电子",
+            "time": "T字",
+            "seal_type": "T字板",
+            "theme": "三季报增长",
+            "turnover": "12.3亿"
+          },
+          {
+            "code": "000530",
+            "name": "冰山冷热",
+            "time": "一字",
+            "seal_type": "一字板",
+            "theme": "冰雪产业",
+            "turnover": "10.88亿"
+          },
+          {
+            "code": "601188",
+            "name": "龙江交通",
+            "time": "9:30",
+            "seal_type": "快速封板",
+            "theme": "冰雪产业",
+            "turnover": "2.85亿"
+          },
+          {
+            "code": "000668",
+            "name": "荣丰控股",
+            "time": "一字",
+            "seal_type": "一字板",
+            "theme": "实控人变更",
+            "turnover": "1.25亿"
+          },
+          {
+            "code": "002813",
+            "name": "路畅科技",
+            "time": "9:56",
+            "seal_type": "换手分歧板",
+            "theme": "实控人变更",
+            "turnover": "3.90亿"
+          },
+          {
+            "code": "002860",
+            "name": "星帅尔",
+            "time": "一字",
+            "seal_type": "一字板",
+            "theme": "并购重组",
+            "turnover": "4.97亿"
+          },
+          {
+            "code": "002917",
+            "name": "金奥博",
+            "time": "9:30",
+            "seal_type": "秒板",
+            "theme": "并购重组",
+            "turnover": "2.10亿"
+          },
+          {
+            "code": "600391",
+            "name": "航发科技",
+            "time": "10:06",
+            "seal_type": "放量拉升板",
+            "theme": "航空发动机",
+            "turnover": "4.50亿"
+          },
+          {
+            "code": "001318",
+            "name": "阳光乳业",
+            "time": "T字",
+            "seal_type": "T字板",
+            "theme": "乳业",
+            "turnover": "2.14亿"
+          },
+          {
+            "code": "600202",
+            "name": "哈空调",
+            "time": "T字",
+            "seal_type": "T字板",
+            "theme": "专用设备",
+            "turnover": "2.99亿"
+          },
+          {
+            "code": "600847",
+            "name": "万里股份",
+            "time": "9:35",
+            "seal_type": "放量接力",
+            "theme": "锂电池",
+            "turnover": "1.80亿"
+          },
+          {
+            "code": "002552",
+            "name": "宝鼎科技",
+            "time": "一字",
+            "seal_type": "一字板",
+            "theme": "三季报增长",
+            "turnover": "3.15亿"
+          },
+          {
+            "code": "605189",
+            "name": "富春染织",
+            "time": "一字",
+            "seal_type": "一字板",
+            "theme": "三季报增长",
+            "turnover": "14.3亿"
+          },
+          {
+            "code": "000601",
+            "name": "韶能股份",
+            "time": "9:46",
+            "seal_type": "换手板",
+            "theme": "三季报增长",
+            "turnover": "2.65亿"
+          },
+          {
+            "code": "603533",
+            "name": "掌阅科技",
+            "time": "10:05",
+            "seal_type": "7天4板",
+            "theme": "AI视频",
+            "turnover": "9.20亿"
+          },
+          {
+            "code": "603598",
+            "name": "引力传媒",
+            "time": "10:27",
+            "seal_type": "放量板",
+            "theme": "文化传媒",
+            "turnover": "4.10亿"
+          },
+          {
+            "code": "601811",
+            "name": "新华文轩",
+            "time": "11:07",
+            "seal_type": "4天3板",
+            "theme": "文化传媒",
+            "turnover": "3.80亿"
+          }
+        ]
+      },
+      {
+        "tier": "首板",
+        "count": 21,
+        "stocks": [
+          {
+            "code": "600519",
+            "name": "贵州茅台",
+            "time": "14:50",
+            "seal_type": "权重护盘",
+            "theme": "白酒",
+            "turnover": "85.2亿"
+          },
+          {
+            "code": "600123",
+            "name": "兰花科创",
+            "time": "10:15",
+            "seal_type": "放量封板",
+            "theme": "煤炭",
+            "turnover": "5.6亿"
+          },
+          {
+            "code": "601808",
+            "name": "中海油服",
+            "time": "13:15",
+            "seal_type": "稳健封板",
+            "theme": "石油石化",
+            "turnover": "6.8亿"
+          },
+          {
+            "code": "601377",
+            "name": "兴业证券",
+            "time": "10:45",
+            "seal_type": "异动秒板",
+            "theme": "大金融",
+            "turnover": "12.4亿"
+          }
+        ]
+      }
+    ],
     "timeline": [
       {
         "time": "09:25",
         "tag": "大单一字",
-        "badge_color": "bg-red-500",
-        "title": "富春染织、冰山冷热超大单一字封死",
-        "desc": "富春染织封单14.3亿领跑两市，冰山冷热10.88亿顶出一字2连板，竞价定调冷链与纺织方向。"
+        "stock": "冰山冷热",
+        "theme": "体育产业",
+        "desc": "体育产业冰山冷热大单一字，二连板",
+        "type": "highlight"
       },
       {
-        "time": "09:30",
-        "tag": "领先身位",
-        "badge_color": "bg-amber-500",
-        "title": "慈文传媒极速秒板，晋级4板龙头",
-        "desc": "开盘仅3秒直线打板，封单迅速突破15万手，带领AI影视文化板块逆市走强。"
+        "time": "09:25",
+        "tag": "大单一字",
+        "stock": "百洋股份",
+        "theme": "农业",
+        "desc": "农业百洋股份大单一字，四连板",
+        "type": "highlight"
       },
       {
-        "time": "09:30",
-        "tag": "秒板共振",
-        "badge_color": "bg-red-500",
-        "title": "新经典紧随秒板，达成4连板",
-        "desc": "文化出版板块双龙并进，与慈文传媒形成梯队共振。"
+        "time": "09:25",
+        "tag": "大单一字",
+        "stock": "星帅尔",
+        "theme": "并购重组",
+        "desc": "并购重组星帅尔大单一字，二连板",
+        "type": "highlight"
+      },
+      {
+        "time": "09:25",
+        "tag": "大单一字",
+        "stock": "富春染织",
+        "theme": "三季报增长",
+        "desc": "三季报增长富春染织大单一字首板涨停",
+        "type": "highlight"
       },
       {
         "time": "09:30",
         "tag": "人气股杀跌",
-        "badge_color": "bg-emerald-500",
-        "title": "老妖股触及跌停，高位退潮分化",
-        "desc": "前期高位情绪标的开盘遭遇无情核按钮，高位情绪退潮明显，注意防守。"
+        "stock": "龙版传媒",
+        "theme": "AI应用",
+        "desc": "AI应用龙版传媒盘中触及跌停，高位股分化加剧",
+        "type": "drawdown"
       },
       {
-        "time": "09:42",
+        "time": "09:30",
+        "tag": "领先身位",
+        "stock": "慈文传媒",
+        "theme": "AI应用",
+        "desc": "AI应用慈文传媒领先身位，四连板",
+        "type": "highlight"
+      },
+      {
+        "time": "09:30",
+        "tag": "领先身位",
+        "stock": "超声电子",
+        "theme": "三季报增长",
+        "desc": "三季报增长超声电子领先身位、T字板，二连板",
+        "type": "highlight"
+      },
+      {
+        "time": "09:30",
         "tag": "直线拉升",
-        "badge_color": "bg-red-500",
-        "title": "震安科技20cm秒板封死",
-        "desc": "业绩超预期催化，减隔震龙头快速涨停拉动相关基建链条。"
+        "stock": "新经典",
+        "theme": "文化传媒",
+        "desc": "文化传媒新经典直线拉升，四连板",
+        "type": "highlight"
       },
       {
-        "time": "10:15",
-        "tag": "题材轮动",
-        "badge_color": "bg-blue-500",
-        "title": "跨境支付/数字货币快速异动",
-        "desc": "盘中传出结算协议催化消息，多只小盘股脉冲拉升但随后回落。"
+        "time": "10:05",
+        "tag": "反包板",
+        "stock": "掌阅科技",
+        "theme": "AI视频",
+        "desc": "7天4板超跌反包，多模态应用获资金追捧",
+        "type": "highlight"
       },
       {
-        "time": "13:30",
-        "tag": "炸板分歧",
-        "badge_color": "bg-purple-500",
-        "title": "午后大盘缩量下挫，炸板率飙至40%",
-        "desc": "全市场4496只下跌，多只首板股票被砸，情绪进入分歧加剧阶段。"
+        "time": "11:07",
+        "tag": "反包板",
+        "stock": "新华文轩",
+        "theme": "出版传媒",
+        "desc": "4天3板出版传媒持续上行，防守属性显现",
+        "type": "highlight"
       },
       {
-        "time": "14:45",
-        "tag": "尾盘抢筹",
-        "badge_color": "bg-red-500",
-        "title": "资金尾盘抢筹核心高辨识度龙头",
-        "desc": "资金抱团高标慈文传媒、百洋股份，博弈次日溢价与弱转强。"
-      }
-    ],
-    "ladder": {
-      "max_height": 4,
-      "ranks": [
-        {
-          "level": "4连板",
-          "count": 3,
-          "stocks": [
-            {
-              "code": "002343",
-              "name": "慈文传媒",
-              "industry": "AI影视/文化",
-              "form": "秒板",
-              "desc": "短线空间核心，AI应用催化"
-            },
-            {
-              "code": "603096",
-              "name": "新经典",
-              "industry": "版权/出版",
-              "form": "秒板",
-              "desc": "IP价值重估标杆"
-            },
-            {
-              "code": "002696",
-              "name": "百洋股份",
-              "industry": "水产品/预制菜",
-              "form": "一字板",
-              "desc": "捕捞龙头，连续缩量一字"
-            }
-          ]
-        },
-        {
-          "level": "3连板",
-          "count": 1,
-          "stocks": [
-            {
-              "code": "600731",
-              "name": "醋化股份",
-              "industry": "精细化工",
-              "form": "快速板",
-              "desc": "化工涨价中军"
-            }
-          ]
-        },
-        {
-          "level": "2连板",
-          "count": 11,
-          "stocks": [
-            {
-              "code": "000530",
-              "name": "冰山冷热",
-              "industry": "冷链物流",
-              "form": "一字板",
-              "desc": "大单封死"
-            },
-            {
-              "code": "000823",
-              "name": "超声电子",
-              "industry": "PCB概念",
-              "form": "T字板",
-              "desc": "高频高速覆铜板突破"
-            },
-            {
-              "code": "000668",
-              "name": "荣丰控股",
-              "industry": "医疗健康/物业",
-              "form": "实体板",
-              "desc": "三线红形态放量突破"
-            }
-          ]
-        },
-        {
-          "level": "首板精选",
-          "count": 21,
-          "stocks": [
-            {
-              "code": "605189",
-              "name": "富春染织",
-              "industry": "纺织染整",
-              "form": "一字板",
-              "desc": "竞价14亿主力抢筹"
-            },
-            {
-              "code": "603876",
-              "name": "鼎胜新材",
-              "industry": "铝箔/电池箔",
-              "form": "放量板",
-              "desc": "三季报业绩大增"
-            }
-          ]
-        }
-      ]
-    },
-    "hot_sectors": [
-      {
-        "name": "三季报预增",
-        "zt_count": 4,
-        "total_turnover": "21.5亿",
-        "leader": "鼎胜新材",
-        "trend": "+3.45%"
+        "time": "13:15",
+        "tag": "资金护盘",
+        "stock": "中海油服",
+        "theme": "石油石化",
+        "desc": "中字头与油气开采权重逆势拉升，承接指数下行",
+        "type": "highlight"
       },
       {
-        "name": "AI影视/多模态",
-        "zt_count": 3,
-        "total_turnover": "35.2亿",
-        "leader": "慈文传媒",
-        "trend": "+2.85%"
-      },
-      {
-        "name": "水产与食品",
-        "zt_count": 2,
-        "total_turnover": "15.8亿",
-        "leader": "百洋股份",
-        "trend": "+1.92%"
-      },
-      {
-        "name": "PCB高端覆铜板",
-        "zt_count": 2,
-        "total_turnover": "28.4亿",
-        "leader": "超声电子",
-        "trend": "+1.65%"
+        "time": "14:30",
+        "tag": "炸板跳水",
+        "stock": "丽人丽妆",
+        "theme": "平台经济",
+        "desc": "午后尾盘炸板快速跳水，日内巨亏17%",
+        "type": "drawdown"
       }
     ]
   },
   "new_high_100": {
     "date": "2026-10-14",
     "total_count": 133,
-    "today_new_count": 38,
-    "industry_distribution": [
+    "new_today_count": 38,
+    "donut_sectors": [
       {
-        "industry": "银行与金融",
+        "sector": "银行",
         "count": 16,
-        "new_count": 2,
-        "ratio": 12.03
+        "new_count": 1,
+        "pct": 12.0,
+        "color": "#f43f5e"
       },
       {
-        "industry": "医药生物",
+        "sector": "医药",
         "count": 13,
         "new_count": 4,
-        "ratio": 9.77
+        "pct": 9.8,
+        "color": "#06b6d4"
       },
       {
-        "industry": "AI应用/传媒",
+        "sector": "AI应用",
         "count": 13,
         "new_count": 3,
-        "ratio": 9.77
+        "pct": 9.8,
+        "color": "#a855f7"
       },
       {
-        "industry": "电网设备",
-        "count": 11,
-        "new_count": 2,
-        "ratio": 8.27
-      },
-      {
-        "industry": "机械装备",
-        "count": 10,
-        "new_count": 3,
-        "ratio": 7.52
-      },
-      {
-        "industry": "汽车零部件",
+        "sector": "基础建设",
         "count": 9,
-        "new_count": 2,
-        "ratio": 6.77
-      },
-      {
-        "industry": "电子元器件",
-        "count": 8,
         "new_count": 3,
-        "ratio": 6.02
+        "pct": 6.8,
+        "color": "#3b82f6"
       },
       {
-        "industry": "其他行业",
-        "count": 53,
-        "new_count": 19,
-        "ratio": 39.85
+        "sector": "服装家纺",
+        "count": 7,
+        "new_count": 2,
+        "pct": 5.3,
+        "color": "#f97316"
+      },
+      {
+        "sector": "化工",
+        "count": 6,
+        "new_count": 1,
+        "pct": 4.5,
+        "color": "#eab308"
+      },
+      {
+        "sector": "港口",
+        "count": 6,
+        "new_count": 1,
+        "pct": 4.5,
+        "color": "#14b8a6"
+      },
+      {
+        "sector": "文化传媒",
+        "count": 5,
+        "new_count": 2,
+        "pct": 3.8,
+        "color": "#ec4899"
+      },
+      {
+        "sector": "电力",
+        "count": 5,
+        "new_count": 2,
+        "pct": 3.8,
+        "color": "#8b5cf6"
+      },
+      {
+        "sector": "石油石化",
+        "count": 5,
+        "new_count": 2,
+        "pct": 3.8,
+        "color": "#f59e0b"
+      },
+      {
+        "sector": "其他",
+        "count": 48,
+        "new_count": 17,
+        "pct": 36.1,
+        "color": "#64748b"
       }
     ],
-    "stocks": [
-      {
-        "code": "300767",
-        "name": "震安科技",
-        "price": 11.2,
-        "pct_change": 20.04,
-        "pct_20d": 56.8,
-        "industry": "工程建筑",
-        "is_new": true,
-        "concept": "减隔震+三季报"
-      },
-      {
-        "code": "002343",
-        "name": "慈文传媒",
-        "price": 8.78,
-        "pct_change": 10.03,
-        "pct_20d": 46.5,
-        "industry": "文化传媒",
-        "is_new": true,
-        "concept": "AI视频+4连板龙头"
-      },
-      {
-        "code": "603096",
-        "name": "新经典",
-        "price": 18.92,
-        "pct_change": 10.0,
-        "pct_20d": 46.2,
-        "industry": "文化传媒",
-        "is_new": true,
-        "concept": "版权IP+4连板"
-      },
-      {
-        "code": "002696",
-        "name": "百洋股份",
-        "price": 6.38,
-        "pct_change": 10.0,
-        "pct_20d": 46.3,
-        "industry": "农牧水产",
-        "is_new": true,
-        "concept": "预制菜+4连板"
-      },
-      {
-        "code": "000668",
-        "name": "荣丰控股",
-        "price": 22.62,
-        "pct_change": 10.02,
-        "pct_20d": 21.2,
-        "industry": "住宅物业",
-        "is_new": true,
-        "concept": "三线红核心资产"
-      },
-      {
-        "code": "000823",
-        "name": "超声电子",
-        "price": 10.45,
-        "pct_change": 9.98,
-        "pct_20d": 32.4,
-        "industry": "电子元件",
-        "is_new": true,
-        "concept": "PCB+高速覆铜板"
-      },
-      {
-        "code": "600731",
-        "name": "湖南海利",
-        "price": 7.63,
-        "pct_change": 9.94,
-        "pct_20d": 28.6,
-        "industry": "精细化工",
-        "is_new": true,
-        "concept": "有机硅中间体涨价"
-      },
-      {
-        "code": "600036",
-        "name": "招商银行",
-        "price": 39.85,
-        "pct_change": 1.25,
-        "pct_20d": 8.9,
-        "industry": "银行",
-        "is_new": false,
-        "concept": "高股息资产重估"
-      },
-      {
-        "code": "601398",
-        "name": "工商银行",
-        "price": 6.28,
-        "pct_change": 0.8,
-        "pct_20d": 7.5,
-        "industry": "银行",
-        "is_new": false,
-        "concept": "破净修复高股息"
-      },
-      {
-        "code": "600276",
-        "name": "恒瑞医药",
-        "price": 52.6,
-        "pct_change": 2.15,
-        "pct_20d": 14.8,
-        "industry": "医药生物",
-        "is_new": false,
-        "concept": "创新药出海"
-      },
-      {
-        "code": "688137",
-        "name": "近岸蛋白",
-        "price": 137.16,
-        "pct_change": -6.67,
-        "pct_20d": 122.8,
-        "industry": "生物医药",
-        "is_new": false,
-        "concept": "mRNA酶制剂龙头"
-      }
-    ]
+    "grouped_by_sector": {
+      "银行": [
+        {
+          "code": "601077",
+          "name": "渝农商行",
+          "is_new": true,
+          "price": 7.07,
+          "pct_change": 2.32,
+          "theme": "银行 / 破净股概念"
+        },
+        {
+          "code": "601577",
+          "name": "长沙银行",
+          "is_new": false,
+          "price": 9.76,
+          "pct_change": 0.83,
+          "theme": "银行 / 高股息精选"
+        },
+        {
+          "code": "601998",
+          "name": "中信银行",
+          "is_new": false,
+          "price": 9.27,
+          "pct_change": 0.76,
+          "theme": "银行 / 中特估"
+        },
+        {
+          "code": "600000",
+          "name": "浦发银行",
+          "is_new": false,
+          "price": 9.65,
+          "pct_change": 0.63,
+          "theme": "银行 / 高股息精选"
+        },
+        {
+          "code": "601939",
+          "name": "建设银行",
+          "is_new": false,
+          "price": 11.4,
+          "pct_change": 0.26,
+          "theme": "银行 / 中特估"
+        }
+      ],
+      "AI应用": [
+        {
+          "code": "301052",
+          "name": "果麦文化",
+          "is_new": true,
+          "price": 34.06,
+          "pct_change": 14.49,
+          "theme": "版权 / 文化传媒"
+        },
+        {
+          "code": "002343",
+          "name": "慈文传媒",
+          "is_new": false,
+          "price": 8.1,
+          "pct_change": 10.05,
+          "theme": "AI视频 / AI应用"
+        },
+        {
+          "code": "603533",
+          "name": "掌阅科技",
+          "is_new": false,
+          "price": 22.15,
+          "pct_change": 10.02,
+          "theme": "知识产权 / AI阅读"
+        },
+        {
+          "code": "002292",
+          "name": "奥飞娱乐",
+          "is_new": false,
+          "price": 9.43,
+          "pct_change": 2.95,
+          "theme": "AI玩具 / 端侧AI"
+        }
+      ],
+      "天然气": [
+        {
+          "code": "600803",
+          "name": "新奥股份",
+          "is_new": true,
+          "price": 19.85,
+          "pct_change": 2.32,
+          "theme": "天然气 / 并购重组"
+        },
+        {
+          "code": "605169",
+          "name": "洪通燃气",
+          "is_new": false,
+          "price": 12.74,
+          "pct_change": 0.24,
+          "theme": "天然气 / 新疆"
+        }
+      ],
+      "其他": [
+        {
+          "code": "300299",
+          "name": "富春股份",
+          "is_new": true,
+          "price": 6.88,
+          "pct_change": 20.07,
+          "theme": "互动影游 / 游戏"
+        },
+        {
+          "code": "002696",
+          "name": "百洋股份",
+          "is_new": false,
+          "price": 9.75,
+          "pct_change": 10.05,
+          "theme": "水产品 / 农业"
+        },
+        {
+          "code": "002813",
+          "name": "路畅科技",
+          "is_new": true,
+          "price": 29.02,
+          "pct_change": 10.01,
+          "theme": "实控人变更 / 智能座舱"
+        },
+        {
+          "code": "600316",
+          "name": "洪都航空",
+          "is_new": true,
+          "price": 35.56,
+          "pct_change": 5.64,
+          "theme": "军工 / 军贸"
+        },
+        {
+          "code": "600573",
+          "name": "惠泉啤酒",
+          "is_new": true,
+          "price": 13.46,
+          "pct_change": 5.07,
+          "theme": "啤酒 / 食品饮料"
+        },
+        {
+          "code": "601766",
+          "name": "中国中车",
+          "is_new": false,
+          "price": 6.55,
+          "pct_change": 1.87,
+          "theme": "轨道交通 / 中特估"
+        },
+        {
+          "code": "002014",
+          "name": "永新股份",
+          "is_new": false,
+          "price": 11.43,
+          "pct_change": 1.87,
+          "theme": "包装印刷 / 绿色电力"
+        },
+        {
+          "code": "603529",
+          "name": "爱玛科技",
+          "is_new": false,
+          "price": 23.53,
+          "pct_change": 1.73,
+          "theme": "两轮车 / 字节概念"
+        },
+        {
+          "code": "601598",
+          "name": "中国外运",
+          "is_new": false,
+          "price": 6.93,
+          "pct_change": 1.17,
+          "theme": "航运 / 中特估"
+        },
+        {
+          "code": "600621",
+          "name": "华鑫股份",
+          "is_new": false,
+          "price": 14.95,
+          "pct_change": 1.15,
+          "theme": "证券 / 参股券商"
+        }
+      ]
+    }
   },
   "period_statistics": {
     "date": "2026-10-14",
     "periods": {
       "3d": {
-        "label": "近3日",
-        "top_sectors": [
+        "label": "近 3 日",
+        "sectors": [
           {
-            "name": "AI影视多模态",
-            "pct": 14.85,
-            "zt_count": 6,
-            "leader": "慈文传媒"
+            "rank": 1,
+            "name": "AI应用与短剧",
+            "pct_change": 8.75,
+            "limit_up_count": 6,
+            "leader": "慈文传媒 (+33.1%)"
           },
           {
-            "name": "图书文化传媒",
-            "pct": 12.3,
-            "zt_count": 5,
-            "leader": "新经典"
+            "rank": 2,
+            "name": "出版传媒与版权",
+            "pct_change": 7.42,
+            "limit_up_count": 5,
+            "leader": "新经典 (+33.0%)"
           },
           {
-            "name": "水产品/预制菜",
-            "pct": 10.5,
-            "zt_count": 3,
-            "leader": "百洋股份"
+            "rank": 3,
+            "name": "水产与冷链物流",
+            "pct_change": 6.89,
+            "limit_up_count": 4,
+            "leader": "百洋股份 (+33.1%)"
           },
           {
-            "name": "三季报业绩大幅预增",
-            "pct": 8.65,
-            "zt_count": 7,
-            "leader": "震安科技"
+            "rank": 4,
+            "name": "煤炭与高股息红利",
+            "pct_change": 4.12,
+            "limit_up_count": 2,
+            "leader": "晋控煤业 (+12.4%)"
           },
           {
-            "name": "冷链物流装备",
-            "pct": 7.2,
-            "zt_count": 3,
-            "leader": "冰山冷热"
+            "rank": 5,
+            "name": "三季报高确定性",
+            "pct_change": 3.88,
+            "limit_up_count": 5,
+            "leader": "超声电子 (+21.0%)"
+          },
+          {
+            "rank": 6,
+            "name": "冰雪与体育产业",
+            "pct_change": 3.65,
+            "limit_up_count": 3,
+            "leader": "冰山冷热 (+21.0%)"
           }
         ],
-        "top_stocks": [
+        "sector_stocks_map": {
+          "AI应用与短剧": [
+            {
+              "code": "002343",
+              "name": "慈文传媒",
+              "pct_change": 33.1,
+              "amplitude": 36.5,
+              "turnover_rate": 18.2,
+              "limit_days": 3,
+              "is_new_high": true
+            },
+            {
+              "code": "603533",
+              "name": "掌阅科技",
+              "pct_change": 24.5,
+              "amplitude": 31.2,
+              "turnover_rate": 28.6,
+              "limit_days": 2,
+              "is_new_high": true
+            },
+            {
+              "code": "301052",
+              "name": "果麦文化",
+              "pct_change": 21.8,
+              "amplitude": 28.4,
+              "turnover_rate": 22.1,
+              "limit_days": 1,
+              "is_new_high": true
+            },
+            {
+              "code": "002292",
+              "name": "奥飞娱乐",
+              "pct_change": 14.2,
+              "amplitude": 19.5,
+              "turnover_rate": 15.3,
+              "limit_days": 1,
+              "is_new_high": false
+            }
+          ],
+          "出版传媒与版权": [
+            {
+              "code": "603096",
+              "name": "新经典",
+              "pct_change": 33.0,
+              "amplitude": 35.8,
+              "turnover_rate": 19.4,
+              "limit_days": 3,
+              "is_new_high": true
+            },
+            {
+              "code": "601811",
+              "name": "新华文轩",
+              "pct_change": 22.4,
+              "amplitude": 26.1,
+              "turnover_rate": 16.5,
+              "limit_days": 2,
+              "is_new_high": true
+            },
+            {
+              "code": "601929",
+              "name": "吉视传媒",
+              "pct_change": 15.2,
+              "amplitude": 18.7,
+              "turnover_rate": 14.1,
+              "limit_days": 1,
+              "is_new_high": false
+            }
+          ],
+          "水产与冷链物流": [
+            {
+              "code": "002696",
+              "name": "百洋股份",
+              "pct_change": 33.1,
+              "amplitude": 33.1,
+              "turnover_rate": 8.5,
+              "limit_days": 3,
+              "is_new_high": true
+            },
+            {
+              "code": "000530",
+              "name": "冰山冷热",
+              "pct_change": 21.0,
+              "amplitude": 21.0,
+              "turnover_rate": 5.2,
+              "limit_days": 2,
+              "is_new_high": true
+            },
+            {
+              "code": "002639",
+              "name": "雪人股份",
+              "pct_change": 12.8,
+              "amplitude": 17.4,
+              "turnover_rate": 18.2,
+              "limit_days": 1,
+              "is_new_high": false
+            }
+          ]
+        },
+        "leading_stocks": [
           {
             "code": "002343",
             "name": "慈文传媒",
-            "pct": 33.15,
-            "amplitude": 34.2,
-            "turnover": 42.5,
-            "zt_days": 3,
-            "is_new_high": true,
-            "industry": "文化传媒"
+            "pct_change": 33.1,
+            "amplitude": 36.5,
+            "turnover_rate": 18.2,
+            "limit_days": 3,
+            "is_new_high": true
           },
           {
             "code": "603096",
             "name": "新经典",
-            "pct": 33.1,
-            "amplitude": 33.5,
-            "turnover": 38.6,
-            "zt_days": 3,
-            "is_new_high": true,
-            "industry": "文化传媒"
+            "pct_change": 33.0,
+            "amplitude": 35.8,
+            "turnover_rate": 19.4,
+            "limit_days": 3,
+            "is_new_high": true
           },
           {
             "code": "002696",
             "name": "百洋股份",
-            "pct": 33.08,
+            "pct_change": 33.1,
             "amplitude": 33.1,
-            "turnover": 12.4,
-            "zt_days": 3,
-            "is_new_high": true,
-            "industry": "农牧水产"
+            "turnover_rate": 8.5,
+            "limit_days": 3,
+            "is_new_high": true
           },
           {
-            "code": "000668",
-            "name": "荣丰控股",
-            "pct": 33.06,
-            "amplitude": 35.8,
-            "turnover": 28.5,
-            "zt_days": 3,
-            "is_new_high": true,
-            "industry": "住宅物业"
+            "code": "603968",
+            "name": "醋化股份",
+            "pct_change": 26.5,
+            "amplitude": 30.2,
+            "turnover_rate": 22.1,
+            "limit_days": 2,
+            "is_new_high": true
+          },
+          {
+            "code": "603533",
+            "name": "掌阅科技",
+            "pct_change": 24.5,
+            "amplitude": 31.2,
+            "turnover_rate": 28.6,
+            "limit_days": 2,
+            "is_new_high": true
+          },
+          {
+            "code": "000823",
+            "name": "超声电子",
+            "pct_change": 21.0,
+            "amplitude": 25.4,
+            "turnover_rate": 24.5,
+            "limit_days": 2,
+            "is_new_high": true
           },
           {
             "code": "000530",
             "name": "冰山冷热",
-            "pct": 21.05,
-            "amplitude": 22.0,
-            "turnover": 18.2,
-            "zt_days": 2,
-            "is_new_high": true,
-            "industry": "冷链装备"
-          }
-        ]
-      },
-      "5d": {
-        "label": "近5日",
-        "top_sectors": [
-          {
-            "name": "AI影视传媒",
-            "pct": 22.4,
-            "zt_count": 8,
-            "leader": "慈文传媒"
-          },
-          {
-            "name": "版权IP",
-            "pct": 19.8,
-            "zt_count": 6,
-            "leader": "新经典"
-          },
-          {
-            "name": "深水养殖",
-            "pct": 16.5,
-            "zt_count": 4,
-            "leader": "百洋股份"
-          },
-          {
-            "name": "高端PCB",
-            "pct": 14.2,
-            "zt_count": 5,
-            "leader": "超声电子"
-          },
-          {
-            "name": "生物医药核心",
-            "pct": 11.8,
-            "zt_count": 4,
-            "leader": "近岸蛋白"
-          }
-        ],
-        "top_stocks": [
-          {
-            "code": "002343",
-            "name": "慈文传媒",
-            "pct": 46.5,
-            "amplitude": 48.0,
-            "turnover": 68.2,
-            "zt_days": 4,
-            "is_new_high": true,
-            "industry": "文化传媒"
-          },
-          {
-            "code": "603096",
-            "name": "新经典",
-            "pct": 46.2,
-            "amplitude": 47.5,
-            "turnover": 55.4,
-            "zt_days": 4,
-            "is_new_high": true,
-            "industry": "文化传媒"
-          },
-          {
-            "code": "002696",
-            "name": "百洋股份",
-            "pct": 46.3,
-            "amplitude": 46.5,
-            "turnover": 25.1,
-            "zt_days": 4,
-            "is_new_high": true,
-            "industry": "农牧水产"
-          },
-          {
-            "code": "000823",
-            "name": "超声电子",
-            "pct": 28.5,
-            "amplitude": 32.4,
-            "turnover": 45.8,
-            "zt_days": 2,
-            "is_new_high": true,
-            "industry": "电子元件"
+            "pct_change": 21.0,
+            "amplitude": 21.0,
+            "turnover_rate": 5.2,
+            "limit_days": 2,
+            "is_new_high": true
           },
           {
             "code": "000668",
             "name": "荣丰控股",
-            "pct": 23.27,
-            "amplitude": 38.5,
-            "turnover": 48.2,
-            "zt_days": 3,
-            "is_new_high": true,
-            "industry": "住宅物业"
+            "pct_change": 21.0,
+            "amplitude": 21.0,
+            "turnover_rate": 6.8,
+            "limit_days": 2,
+            "is_new_high": false
+          },
+          {
+            "code": "002813",
+            "name": "路畅科技",
+            "pct_change": 21.0,
+            "amplitude": 23.5,
+            "turnover_rate": 15.6,
+            "limit_days": 2,
+            "is_new_high": true
+          },
+          {
+            "code": "002860",
+            "name": "星帅尔",
+            "pct_change": 21.0,
+            "amplitude": 21.0,
+            "turnover_rate": 4.9,
+            "limit_days": 2,
+            "is_new_high": false
           }
         ]
       },
-      "10d": {
-        "label": "近10日",
-        "top_sectors": [
+      "5d": {
+        "label": "近 5 日",
+        "sectors": [
           {
-            "name": "多模态AI应用",
-            "pct": 35.8,
-            "zt_count": 14,
-            "leader": "慈文传媒"
+            "rank": 1,
+            "name": "出版传媒与版权",
+            "pct_change": 14.2,
+            "limit_up_count": 8,
+            "leader": "新经典 (+46.4%)"
           },
           {
-            "name": "创新药出海",
-            "pct": 28.4,
-            "zt_count": 10,
-            "leader": "近岸蛋白"
+            "rank": 2,
+            "name": "AI应用与短剧",
+            "pct_change": 12.8,
+            "limit_up_count": 7,
+            "leader": "慈文传媒 (+46.4%)"
           },
           {
-            "name": "覆铜板与半导体材料",
-            "pct": 24.6,
-            "zt_count": 8,
-            "leader": "超声电子"
-          },
-          {
-            "name": "高股息红利",
-            "pct": 12.3,
-            "zt_count": 5,
-            "leader": "招商银行"
+            "rank": 3,
+            "name": "水产与冷链物流",
+            "pct_change": 9.5,
+            "limit_up_count": 5,
+            "leader": "百洋股份 (+46.4%)"
           }
         ],
-        "top_stocks": [
-          {
-            "code": "688137",
-            "name": "近岸蛋白",
-            "pct": 68.4,
-            "amplitude": 85.2,
-            "turnover": 128.5,
-            "zt_days": 3,
-            "is_new_high": true,
-            "industry": "生物医药"
-          },
+        "sector_stocks_map": {
+          "出版传媒与版权": [
+            {
+              "code": "603096",
+              "name": "新经典",
+              "pct_change": 46.4,
+              "amplitude": 52.1,
+              "turnover_rate": 35.2,
+              "limit_days": 4,
+              "is_new_high": true
+            },
+            {
+              "code": "601811",
+              "name": "新华文轩",
+              "pct_change": 31.2,
+              "amplitude": 38.5,
+              "turnover_rate": 28.4,
+              "limit_days": 3,
+              "is_new_high": true
+            }
+          ],
+          "AI应用与短剧": [
+            {
+              "code": "002343",
+              "name": "慈文传媒",
+              "pct_change": 46.4,
+              "amplitude": 50.8,
+              "turnover_rate": 32.1,
+              "limit_days": 4,
+              "is_new_high": true
+            },
+            {
+              "code": "603533",
+              "name": "掌阅科技",
+              "pct_change": 38.5,
+              "amplitude": 45.2,
+              "turnover_rate": 41.2,
+              "limit_days": 3,
+              "is_new_high": true
+            }
+          ]
+        },
+        "leading_stocks": [
           {
             "code": "002343",
             "name": "慈文传媒",
-            "pct": 46.5,
-            "amplitude": 48.0,
-            "turnover": 68.2,
-            "zt_days": 4,
-            "is_new_high": true,
-            "industry": "文化传媒"
+            "pct_change": 46.4,
+            "amplitude": 50.8,
+            "turnover_rate": 32.1,
+            "limit_days": 4,
+            "is_new_high": true
           },
           {
             "code": "603096",
             "name": "新经典",
-            "pct": 46.2,
-            "amplitude": 47.5,
-            "turnover": 55.4,
-            "zt_days": 4,
-            "is_new_high": true,
-            "industry": "文化传媒"
-          }
-        ]
-      },
-      "20d": {
-        "label": "近20日",
-        "top_sectors": [
-          {
-            "name": "创新药与生物制造",
-            "pct": 52.4,
-            "zt_count": 22,
-            "leader": "近岸蛋白"
+            "pct_change": 46.4,
+            "amplitude": 52.1,
+            "turnover_rate": 35.2,
+            "limit_days": 4,
+            "is_new_high": true
           },
           {
-            "name": "算力算法多模态",
-            "pct": 45.2,
-            "zt_count": 18,
-            "leader": "慈文传媒"
-          },
-          {
-            "name": "低空经济与智能装备",
-            "pct": 32.8,
-            "zt_count": 12,
-            "leader": "震安科技"
-          }
-        ],
-        "top_stocks": [
-          {
-            "code": "688137",
-            "name": "近岸蛋白",
-            "pct": 122.77,
-            "amplitude": 145.0,
-            "turnover": 245.8,
-            "zt_days": 5,
-            "is_new_high": true,
-            "industry": "生物医药"
-          },
-          {
-            "code": "002343",
-            "name": "慈文传媒",
-            "pct": 46.5,
-            "amplitude": 48.0,
-            "turnover": 68.2,
-            "zt_days": 4,
-            "is_new_high": true,
-            "industry": "文化传媒"
-          },
-          {
-            "code": "000823",
-            "name": "超声电子",
-            "pct": 32.4,
-            "amplitude": 42.5,
-            "turnover": 88.5,
-            "zt_days": 2,
-            "is_new_high": true,
-            "industry": "电子元件"
+            "code": "002696",
+            "name": "百洋股份",
+            "pct_change": 46.4,
+            "amplitude": 46.4,
+            "turnover_rate": 14.2,
+            "limit_days": 4,
+            "is_new_high": true
           }
         ]
       }
