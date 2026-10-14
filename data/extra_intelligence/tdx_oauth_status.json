@@ -1,0 +1,1 @@
+{"configured":true,"authorized":true,"has_refresh_token":true,"expires_at":"2026-10-15T16:58:30.945949+08:00","expired":false,"endpoint":"https://txmcp.tdx.com.cn:3001/txmcp","redirect_uri":"https://rps-review.com/api/tdx/oauth/callback","latest_captured_at":"2026-10-14T15:01:00","latest_trade_date":"2026-10-14","stock_count":5211,"industry_count":345}

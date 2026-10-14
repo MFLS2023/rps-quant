@@ -1,0 +1,1 @@
+const c="__TDX_LEVEL3_INDUSTRY__";function d(e,r=""){const t=e==null?void 0:e.trim();return t&&t.replace(/通达信三级行业/g,c).replace(/短线侠QX收盘值/gi,"收盘情绪值").replace(/短线侠(?:QX|情绪值)/gi,"盘面情绪值").replace(/短线侠|开盘啦|通达信(?:官方)?(?:\s*MCP)?|\bTDX(?:\s*MCP)?\b|Tushare(?:\s*Pro)?|腾讯(?:行情)?|新浪(?:行情)?|AkShare|Baostock|同花顺|东方财富/gi,"系统").replaceAll(c,"通达信三级行业")||r}export{d as r};

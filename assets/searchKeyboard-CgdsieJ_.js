@@ -1,0 +1,1 @@
+function t(){if(typeof window>"u"||!window.matchMedia("(max-width: 767px), (hover: none) and (pointer: coarse)").matches)return;const e=document.activeElement;e instanceof HTMLInputElement&&(e.type==="text"||e.type==="search")&&e.blur()}function n(e){return e.key==="Enter"&&!e.nativeEvent.isComposing&&e.nativeEvent.keyCode!==229}export{t as d,n as i};

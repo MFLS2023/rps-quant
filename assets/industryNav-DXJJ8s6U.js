@@ -1,0 +1,1 @@
+import{a0 as c}from"./index-DzPXCYgc.js";function d(a,u,e,o){const n=Array.from(new Map(u.filter(r=>r.key&&r.name).map(r=>[r.key,r])).values()),t=n.findIndex(r=>r.key===a),s=c();return t<0?{fromIndustryRps:e,returnScroll:s}:{fromIndustryRps:e,returnScroll:s,industryNav:{items:n,index:t,from:e,source:o}}}export{d as c};

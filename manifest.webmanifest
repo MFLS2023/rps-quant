@@ -1,0 +1,60 @@
+{
+  "id": "/",
+  "name": "RPS 欧途 · A股复盘系统",
+  "short_name": "RPS 欧途",
+  "description": "面向 A 股投资者的 RPS 相对强度、市场热点、行业轮动与每日复盘工具。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f1318",
+  "theme_color": "#0f1318",
+  "categories": ["finance", "productivity"],
+  "icons": [
+    {
+      "src": "/brand/pwa-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand/pwa-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/brand/pwa-icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "每日复盘",
+      "short_name": "每日复盘",
+      "url": "/",
+      "icons": [{ "src": "/brand/pwa-icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "行业 RPS",
+      "short_name": "行业 RPS",
+      "url": "/industry-rps",
+      "icons": [{ "src": "/brand/pwa-icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "概念 RPS",
+      "short_name": "概念 RPS",
+      "url": "/concept-rps",
+      "icons": [{ "src": "/brand/pwa-icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "市场热点",
+      "short_name": "市场热点",
+      "url": "/market",
+      "icons": [{ "src": "/brand/pwa-icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

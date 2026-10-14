@@ -1,0 +1,48 @@
+{
+  "level": "complete",
+  "complete": true,
+  "fresh_for_phase": true,
+  "close_batch_ready": true,
+  "phase": "closed",
+  "phase_label": "收盘数据",
+  "data_date": "2026-10-14",
+  "updated_at": "2026-10-14T15:05:20.917032",
+  "using_fallback": false,
+  "message": "个股与行业数据已通过当前批次完整性检查。",
+  "datasets": [
+    {
+      "key": "stock_rps",
+      "label": "个股RPS",
+      "date": "2026-10-14",
+      "count": 5500,
+      "expected": 3000,
+      "complete": true,
+      "close_ready": true
+    },
+    {
+      "key": "industry_rps",
+      "label": "行业RPS",
+      "date": "2026-10-14",
+      "count": 345,
+      "expected": 345,
+      "complete": true,
+      "close_ready": true
+    },
+    {
+      "key": "midday_stock",
+      "label": "盘中个股RPS",
+      "date": "2026-10-14",
+      "count": 5154,
+      "expected": null,
+      "complete": true
+    },
+    {
+      "key": "midday_industry",
+      "label": "盘中行业RPS",
+      "date": "2026-10-14",
+      "count": 345,
+      "expected": 345,
+      "complete": true
+    }
+  ]
+}

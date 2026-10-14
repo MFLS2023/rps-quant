@@ -1,0 +1,754 @@
+{
+  "source_version": "homepage-v1",
+  "source_note": "与首页市场概览同口径；缓存会在复盘重跑或行情样本变化后自动失效。",
+  "data": [
+    {
+      "date": "2026-09-22",
+      "limit_up_count": 63,
+      "limit_down_count": 3,
+      "up_count": 2305,
+      "down_count": 2890,
+      "flat_count": 135,
+      "total_count": 5331,
+      "market_amount_yi": 21132.7,
+      "up_ratio": 43.2,
+      "break_count": 18,
+      "break_rate": 22.2,
+      "seal_rate": 77.8,
+      "consecutive_rate": 38.1,
+      "two_plus_count": 24,
+      "market_height": 6,
+      "height_stocks": [
+        {
+          "code": "001216",
+          "name": "华瓷股份",
+          "consecutive": 6
+        }
+      ],
+      "second_height": 5,
+      "second_height_stocks": [
+        {
+          "code": "603230",
+          "name": "内蒙新华",
+          "consecutive": 5
+        }
+      ],
+      "first_board_count": 39,
+      "second_board_count": 17,
+      "third_board_count": 4,
+      "high_board_count": 3,
+      "second_rate": 20.7,
+      "third_rate": 30.8,
+      "high_rate": 37.5,
+      "previous_limit_up_avg_pct": 2.67,
+      "previous_limit_up_positive_rate": 61.4,
+      "previous_consecutive_avg_pct": 2.61,
+      "previous_consecutive_positive_rate": 65.0,
+      "previous_consecutive_count": 20,
+      "consecutive_codes": [
+        "000504",
+        "000560",
+        "000607",
+        "000756",
+        "000910",
+        "001216",
+        "001234",
+        "001317",
+        "002178",
+        "002259",
+        "002303",
+        "002614",
+        "300110",
+        "600503",
+        "600664",
+        "600721",
+        "600743",
+        "600825",
+        "601811",
+        "603020",
+        "603068",
+        "603230",
+        "603580",
+        "603636"
+      ],
+      "source_version": "homepage-v1",
+      "overview_source": "akshare",
+      "kline_row_count": 5528,
+      "st_signature": "7d9cccc265fc75dc",
+      "computed_at": "2026-10-06T12:40:55.288301+08:00"
+    },
+    {
+      "date": "2026-09-23",
+      "limit_up_count": 51,
+      "limit_down_count": 13,
+      "up_count": 1827,
+      "down_count": 3412,
+      "flat_count": 92,
+      "total_count": 5333,
+      "market_amount_yi": 17504.8,
+      "up_ratio": 34.3,
+      "break_count": 26,
+      "break_rate": 33.8,
+      "seal_rate": 66.2,
+      "consecutive_rate": 23.5,
+      "two_plus_count": 12,
+      "market_height": 4,
+      "height_stocks": [
+        {
+          "code": "601811",
+          "name": "新华文轩",
+          "consecutive": 4
+        },
+        {
+          "code": "000910",
+          "name": "大亚圣象",
+          "consecutive": 4
+        }
+      ],
+      "second_height": 3,
+      "second_height_stocks": [
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "consecutive": 3
+        },
+        {
+          "code": "001234",
+          "name": "泰慕士",
+          "consecutive": 3
+        },
+        {
+          "code": "603636",
+          "name": "南威软件",
+          "consecutive": 3
+        },
+        {
+          "code": "600743",
+          "name": "华远控股",
+          "consecutive": 3
+        },
+        {
+          "code": "000560",
+          "name": "我爱我家",
+          "consecutive": 3
+        },
+        {
+          "code": "002614",
+          "name": "奥佳华",
+          "consecutive": 3
+        },
+        {
+          "code": "600503",
+          "name": "华丽家族",
+          "consecutive": 3
+        }
+      ],
+      "first_board_count": 39,
+      "second_board_count": 3,
+      "third_board_count": 7,
+      "high_board_count": 2,
+      "second_rate": 7.7,
+      "third_rate": 41.2,
+      "high_rate": 28.6,
+      "previous_limit_up_avg_pct": -0.37,
+      "previous_limit_up_positive_rate": 39.7,
+      "previous_consecutive_avg_pct": 1.42,
+      "previous_consecutive_positive_rate": 50.0,
+      "previous_consecutive_count": 24,
+      "consecutive_codes": [
+        "000560",
+        "000910",
+        "001234",
+        "002238",
+        "002614",
+        "600418",
+        "600503",
+        "600743",
+        "600825",
+        "601811",
+        "603636",
+        "605058"
+      ],
+      "source_version": "homepage-v1",
+      "overview_source": "akshare",
+      "kline_row_count": 5530,
+      "st_signature": "7d9cccc265fc75dc",
+      "computed_at": "2026-10-06T12:40:55.288301+08:00"
+    },
+    {
+      "date": "2026-09-24",
+      "limit_up_count": 52,
+      "limit_down_count": 13,
+      "up_count": 1054,
+      "down_count": 4161,
+      "flat_count": 117,
+      "total_count": 5334,
+      "market_amount_yi": 16395.3,
+      "up_ratio": 19.8,
+      "break_count": 10,
+      "break_rate": 16.1,
+      "seal_rate": 83.9,
+      "consecutive_rate": 25.0,
+      "two_plus_count": 13,
+      "market_height": 5,
+      "height_stocks": [
+        {
+          "code": "601811",
+          "name": "新华文轩",
+          "consecutive": 5
+        }
+      ],
+      "second_height": 4,
+      "second_height_stocks": [
+        {
+          "code": "001234",
+          "name": "泰慕士",
+          "consecutive": 4
+        },
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "consecutive": 4
+        },
+        {
+          "code": "002614",
+          "name": "奥佳华",
+          "consecutive": 4
+        }
+      ],
+      "first_board_count": 39,
+      "second_board_count": 8,
+      "third_board_count": 1,
+      "high_board_count": 4,
+      "second_rate": 20.5,
+      "third_rate": 33.3,
+      "high_rate": 44.4,
+      "previous_limit_up_avg_pct": 0.55,
+      "previous_limit_up_positive_rate": 51.0,
+      "previous_consecutive_avg_pct": 1.4,
+      "previous_consecutive_positive_rate": 58.3,
+      "previous_consecutive_count": 12,
+      "consecutive_codes": [
+        "000850",
+        "001234",
+        "002119",
+        "002238",
+        "002614",
+        "002819",
+        "002909",
+        "600802",
+        "600825",
+        "600843",
+        "601811",
+        "603396",
+        "603949"
+      ],
+      "source_version": "homepage-v1",
+      "overview_source": "akshare",
+      "kline_row_count": 5531,
+      "st_signature": "7d9cccc265fc75dc",
+      "computed_at": "2026-10-06T12:40:55.288301+08:00"
+    },
+    {
+      "date": "2026-09-28",
+      "limit_up_count": 33,
+      "limit_down_count": 56,
+      "up_count": 859,
+      "down_count": 4374,
+      "flat_count": 100,
+      "total_count": 5334,
+      "market_amount_yi": 16846.3,
+      "up_ratio": 16.1,
+      "break_count": 11,
+      "break_rate": 25.0,
+      "seal_rate": 75.0,
+      "consecutive_rate": 21.2,
+      "two_plus_count": 7,
+      "market_height": 5,
+      "height_stocks": [
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "consecutive": 5
+        }
+      ],
+      "second_height": 3,
+      "second_height_stocks": [
+        {
+          "code": "603949",
+          "name": "雪龙集团",
+          "consecutive": 3
+        },
+        {
+          "code": "603396",
+          "name": "金辰股份",
+          "consecutive": 3
+        },
+        {
+          "code": "600802",
+          "name": "福建水泥",
+          "consecutive": 3
+        }
+      ],
+      "first_board_count": 26,
+      "second_board_count": 3,
+      "third_board_count": 3,
+      "high_board_count": 1,
+      "second_rate": 7.7,
+      "third_rate": 37.5,
+      "high_rate": 20.0,
+      "previous_limit_up_avg_pct": -2.35,
+      "previous_limit_up_positive_rate": 36.0,
+      "previous_consecutive_avg_pct": -0.68,
+      "previous_consecutive_positive_rate": 53.8,
+      "previous_consecutive_count": 13,
+      "consecutive_codes": [
+        "000678",
+        "600802",
+        "600825",
+        "601218",
+        "603278",
+        "603396",
+        "603949"
+      ],
+      "source_version": "homepage-v1",
+      "overview_source": "akshare",
+      "kline_row_count": 5531,
+      "st_signature": "7d9cccc265fc75dc",
+      "computed_at": "2026-10-06T12:40:55.288301+08:00"
+    },
+    {
+      "date": "2026-09-29",
+      "limit_up_count": 57,
+      "limit_down_count": 10,
+      "up_count": 3345,
+      "down_count": 1847,
+      "flat_count": 140,
+      "total_count": 5336,
+      "market_amount_yi": 13919.9,
+      "up_ratio": 62.7,
+      "break_count": 8,
+      "break_rate": 12.3,
+      "seal_rate": 87.7,
+      "consecutive_rate": 17.5,
+      "two_plus_count": 10,
+      "market_height": 6,
+      "height_stocks": [
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "consecutive": 6
+        }
+      ],
+      "second_height": 4,
+      "second_height_stocks": [
+        {
+          "code": "603949",
+          "name": "雪龙集团",
+          "consecutive": 4
+        }
+      ],
+      "first_board_count": 47,
+      "second_board_count": 7,
+      "third_board_count": 1,
+      "high_board_count": 2,
+      "second_rate": 26.9,
+      "third_rate": 33.3,
+      "high_rate": 50.0,
+      "previous_limit_up_avg_pct": 2.64,
+      "previous_limit_up_positive_rate": 57.6,
+      "previous_consecutive_avg_pct": 2.1,
+      "previous_consecutive_positive_rate": 57.1,
+      "previous_consecutive_count": 7,
+      "consecutive_codes": [
+        "000011",
+        "000678",
+        "002242",
+        "002912",
+        "301190",
+        "600032",
+        "600241",
+        "600488",
+        "600825",
+        "603949"
+      ],
+      "source_version": "homepage-v1",
+      "overview_source": "akshare",
+      "kline_row_count": 5532,
+      "st_signature": "7d9cccc265fc75dc",
+      "computed_at": "2026-10-06T12:40:55.288301+08:00"
+    },
+    {
+      "date": "2026-09-30",
+      "limit_up_count": 52,
+      "limit_down_count": 9,
+      "up_count": 2464,
+      "down_count": 2723,
+      "flat_count": 147,
+      "total_count": 5337,
+      "market_amount_yi": 14176.6,
+      "up_ratio": 46.2,
+      "break_count": 12,
+      "break_rate": 18.8,
+      "seal_rate": 81.2,
+      "consecutive_rate": 23.1,
+      "two_plus_count": 12,
+      "market_height": 7,
+      "height_stocks": [
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "consecutive": 7
+        }
+      ],
+      "second_height": 4,
+      "second_height_stocks": [
+        {
+          "code": "000678",
+          "name": "襄阳轴承",
+          "consecutive": 4
+        }
+      ],
+      "first_board_count": 40,
+      "second_board_count": 6,
+      "third_board_count": 4,
+      "high_board_count": 2,
+      "second_rate": 12.8,
+      "third_rate": 57.1,
+      "high_rate": 66.7,
+      "previous_limit_up_avg_pct": 1.32,
+      "previous_limit_up_positive_rate": 50.0,
+      "previous_consecutive_avg_pct": 4.25,
+      "previous_consecutive_positive_rate": 60.0,
+      "previous_consecutive_count": 10,
+      "consecutive_codes": [
+        "000011",
+        "000678",
+        "002058",
+        "002242",
+        "002866",
+        "301190",
+        "600241",
+        "600825",
+        "603188",
+        "603200",
+        "605303",
+        "605388"
+      ],
+      "source_version": "homepage-v1",
+      "overview_source": "akshare",
+      "kline_row_count": 5533,
+      "st_signature": "7d9cccc265fc75dc",
+      "computed_at": "2026-10-06T12:40:55.288301+08:00"
+    },
+    {
+      "date": "2026-10-08",
+      "limit_up_count": 43,
+      "limit_down_count": 13,
+      "up_count": 1634,
+      "down_count": 3598,
+      "flat_count": 101,
+      "total_count": 5333,
+      "market_amount_yi": 16547.8,
+      "up_ratio": 30.6,
+      "break_count": 32,
+      "break_rate": 42.7,
+      "seal_rate": 57.3,
+      "consecutive_rate": 23.3,
+      "two_plus_count": 10,
+      "market_height": 8,
+      "height_stocks": [
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "consecutive": 8
+        }
+      ],
+      "second_height": 4,
+      "second_height_stocks": [
+        {
+          "code": "002242",
+          "name": "九阳股份",
+          "consecutive": 4
+        },
+        {
+          "code": "600241",
+          "name": "时代万恒",
+          "consecutive": 4
+        }
+      ],
+      "first_board_count": 33,
+      "second_board_count": 3,
+      "third_board_count": 4,
+      "high_board_count": 3,
+      "second_rate": 7.5,
+      "third_rate": 66.7,
+      "high_rate": 50.0,
+      "previous_limit_up_avg_pct": 0.33,
+      "previous_limit_up_positive_rate": 40.0,
+      "previous_consecutive_avg_pct": 5.09,
+      "previous_consecutive_positive_rate": 66.7,
+      "previous_consecutive_count": 12,
+      "consecutive_codes": [
+        "002058",
+        "002242",
+        "002866",
+        "600241",
+        "600663",
+        "600825",
+        "603200",
+        "603906",
+        "603928",
+        "605303"
+      ],
+      "source_version": "homepage-v1",
+      "overview_source": "akshare",
+      "kline_row_count": 5529,
+      "st_signature": "7d9cccc265fc75dc",
+      "computed_at": "2026-10-08T23:45:06.073939+08:00"
+    },
+    {
+      "date": "2026-10-09",
+      "limit_up_count": 69,
+      "limit_down_count": 8,
+      "up_count": 3202,
+      "down_count": 2028,
+      "flat_count": 103,
+      "total_count": 5334,
+      "market_amount_yi": 18811.3,
+      "up_ratio": 60.0,
+      "break_count": 14,
+      "break_rate": 16.9,
+      "seal_rate": 83.1,
+      "consecutive_rate": 17.4,
+      "two_plus_count": 12,
+      "market_height": 9,
+      "height_stocks": [
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "consecutive": 9
+        }
+      ],
+      "second_height": 5,
+      "second_height_stocks": [
+        {
+          "code": "600241",
+          "name": "时代万恒",
+          "consecutive": 5
+        },
+        {
+          "code": "002242",
+          "name": "九阳股份",
+          "consecutive": 5
+        }
+      ],
+      "first_board_count": 57,
+      "second_board_count": 8,
+      "third_board_count": 0,
+      "high_board_count": 4,
+      "second_rate": 24.2,
+      "third_rate": 0.0,
+      "high_rate": 57.1,
+      "previous_limit_up_avg_pct": 3.29,
+      "previous_limit_up_positive_rate": 64.3,
+      "previous_consecutive_avg_pct": 3.89,
+      "previous_consecutive_positive_rate": 70.0,
+      "previous_consecutive_count": 10,
+      "consecutive_codes": [
+        "001300",
+        "001336",
+        "002058",
+        "002242",
+        "002733",
+        "002805",
+        "300530",
+        "600241",
+        "600400",
+        "600408",
+        "600812",
+        "600825"
+      ],
+      "source_version": "homepage-v1",
+      "overview_source": "akshare",
+      "kline_row_count": 5530,
+      "st_signature": "7d9cccc265fc75dc",
+      "computed_at": "2026-10-09T23:53:23.307839+08:00"
+    },
+    {
+      "date": "2026-10-12",
+      "limit_up_count": 46,
+      "limit_down_count": 19,
+      "up_count": 1127,
+      "down_count": 4141,
+      "flat_count": 66,
+      "total_count": 5336,
+      "market_amount_yi": 15246.1,
+      "up_ratio": 21.1,
+      "break_count": 25,
+      "break_rate": 35.2,
+      "seal_rate": 64.8,
+      "consecutive_rate": 39.1,
+      "two_plus_count": 18,
+      "market_height": 10,
+      "height_stocks": [
+        {
+          "code": "600825",
+          "name": "新华传媒",
+          "consecutive": 10
+        }
+      ],
+      "second_height": 6,
+      "second_height_stocks": [
+        {
+          "code": "002242",
+          "name": "九阳股份",
+          "consecutive": 6
+        },
+        {
+          "code": "600241",
+          "name": "时代万恒",
+          "consecutive": 6
+        }
+      ],
+      "first_board_count": 28,
+      "second_board_count": 14,
+      "third_board_count": 1,
+      "high_board_count": 3,
+      "second_rate": 24.6,
+      "third_rate": 12.5,
+      "high_rate": 75.0,
+      "previous_limit_up_avg_pct": 1.81,
+      "previous_limit_up_positive_rate": 59.4,
+      "previous_consecutive_avg_pct": 1.43,
+      "previous_consecutive_positive_rate": 58.3,
+      "previous_consecutive_count": 12,
+      "consecutive_codes": [
+        "000892",
+        "001330",
+        "002242",
+        "002343",
+        "002692",
+        "002696",
+        "600241",
+        "600812",
+        "600825",
+        "601595",
+        "601811",
+        "601929",
+        "603096",
+        "603232",
+        "603533",
+        "605136",
+        "605287",
+        "605577"
+      ],
+      "source_version": "homepage-v1",
+      "overview_source": "akshare",
+      "kline_row_count": 5533,
+      "st_signature": "7d9cccc265fc75dc",
+      "computed_at": "2026-10-12T23:52:00.014924+08:00"
+    },
+    {
+      "date": "2026-10-13",
+      "limit_up_count": 67,
+      "limit_down_count": 8,
+      "up_count": 2818,
+      "down_count": 2367,
+      "flat_count": 149,
+      "total_count": 5336,
+      "market_amount_yi": 16543.7,
+      "up_ratio": 52.8,
+      "break_count": 19,
+      "break_rate": 22.1,
+      "seal_rate": 77.9,
+      "consecutive_rate": 14.9,
+      "two_plus_count": 10,
+      "market_height": 3,
+      "height_stocks": [
+        {
+          "code": "002343",
+          "name": "慈文传媒",
+          "consecutive": 3
+        },
+        {
+          "code": "603096",
+          "name": "新经典",
+          "consecutive": 3
+        },
+        {
+          "code": "605577",
+          "name": "龙版传媒",
+          "consecutive": 3
+        },
+        {
+          "code": "605136",
+          "name": "丽人丽妆",
+          "consecutive": 3
+        },
+        {
+          "code": "002696",
+          "name": "百洋股份",
+          "consecutive": 3
+        }
+      ],
+      "second_height": 2,
+      "second_height_stocks": [
+        {
+          "code": "600693",
+          "name": "东百集团",
+          "consecutive": 2
+        },
+        {
+          "code": "001231",
+          "name": "农心科技",
+          "consecutive": 2
+        },
+        {
+          "code": "603968",
+          "name": "醋化股份",
+          "consecutive": 2
+        },
+        {
+          "code": "600831",
+          "name": "广电网络",
+          "consecutive": 2
+        },
+        {
+          "code": "600851",
+          "name": "海欣股份",
+          "consecutive": 2
+        }
+      ],
+      "first_board_count": 57,
+      "second_board_count": 5,
+      "third_board_count": 5,
+      "high_board_count": 0,
+      "second_rate": 17.9,
+      "third_rate": 35.7,
+      "high_rate": 0.0,
+      "previous_limit_up_avg_pct": 1.13,
+      "previous_limit_up_positive_rate": 48.9,
+      "previous_consecutive_avg_pct": 1.1,
+      "previous_consecutive_positive_rate": 47.1,
+      "previous_consecutive_count": 17,
+      "consecutive_codes": [
+        "001231",
+        "002343",
+        "002696",
+        "600693",
+        "600831",
+        "600851",
+        "603096",
+        "603968",
+        "605136",
+        "605577"
+      ],
+      "source_version": "homepage-v1",
+      "overview_source": "akshare",
+      "kline_row_count": 5532,
+      "st_signature": "7d9cccc265fc75dc",
+      "computed_at": "2026-10-13T23:47:43.567353+08:00"
+    }
+  ]
+}

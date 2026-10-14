@@ -1,0 +1,3568 @@
+{
+  "date": "2026-10-14",
+  "rps_profile": {
+    "key": "selected",
+    "label": "精选",
+    "thresholds": {
+      "rps50": 90.0,
+      "rps120": 93.0,
+      "rps250": 95.0
+    },
+    "test_feature": true,
+    "filters": {
+      "price_position": true,
+      "new_stock": true
+    },
+    "uses_canonical_snapshot": true,
+    "history_synced": true
+  },
+  "badges": {
+    "688137": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "002667": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2133438706624824
+      }
+    },
+    "600825": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "605058": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "301132": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true
+    },
+    "301251": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "600127": {
+      "strategy_type": "triple",
+      "triple": true,
+      "limit_up_3d": true
+    },
+    "301190": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "002388": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true
+    },
+    "688655": {
+      "strategy_type": "triple",
+      "triple": true,
+      "limit_up_3d": true
+    },
+    "601579": {
+      "strategy_type": "double",
+      "triple": false,
+      "limit_down_3d": true
+    },
+    "001326": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "300192": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "300981": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "002811": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "301122": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true
+    },
+    "002913": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "688026": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "605577": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "300939": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "300829": {
+      "strategy_type": "double",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "300489": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true
+    },
+    "002242": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.4624768726612767
+      }
+    },
+    "001368": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "600241": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.9317522998517114
+      }
+    },
+    "002696": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "board_height": 3,
+      "board_roman": "III"
+    },
+    "601811": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "301234": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true
+    },
+    "000823": {
+      "strategy_type": "double",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "300852": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "300647": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "301282": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "000993": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "688175": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "002815": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "301227": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "300333": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.12010576672741
+      }
+    },
+    "301041": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "603001": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "301010": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.686477825111977
+      }
+    },
+    "301081": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true
+    },
+    "002172": {
+      "strategy_type": "double",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "001216": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "301218": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "601595": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0239664491272678
+      }
+    },
+    "002614": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "002343": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "board_height": 3,
+      "board_roman": "III"
+    },
+    "603838": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "605258": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "300473": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "688152": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "301419": {
+      "strategy_type": "double",
+      "triple": false,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0141486620667883
+      }
+    },
+    "688185": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "301366": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "688004": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "301560": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603968": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "board_height": 2,
+      "board_roman": "II"
+    },
+    "603626": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "301119": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "688678": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "603096": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "board_height": 3,
+      "board_roman": "III",
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1174192921627466
+      }
+    },
+    "002789": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300413": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "300154": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "600802": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "300530": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.9085773157019408
+      }
+    },
+    "688265": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300989": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1240789733917063
+      }
+    },
+    "688315": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "003006": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "300964": {
+      "strategy_type": "triple",
+      "triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0223854052776804
+      }
+    },
+    "605177": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_down_3d": true,
+      "limit_up_3d": true
+    },
+    "002813": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "001330": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "600400": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "300369": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "603386": {
+      "strategy_type": "double",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "300426": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "301311": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "301108": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "002443": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "600121": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "300642": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "600391": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "300006": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 5.4082984376876775
+      }
+    },
+    "002912": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "301052": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.5342168272762646
+      }
+    },
+    "603980": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3066323361869674
+      }
+    },
+    "600408": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.554201537219707
+      }
+    },
+    "600641": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "001318": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2960723873463442
+      }
+    },
+    "300234": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "600293": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "002679": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "603230": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_down_3d": true,
+      "limit_up_3d": true
+    },
+    "300845": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603328": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "601886": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "601858": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "301279": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603533": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1930617339966558
+      }
+    },
+    "002694": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300133": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4518142252616937
+      }
+    },
+    "300107": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.503478793900226
+      }
+    },
+    "600026": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "300787": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "600792": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "600316": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3094770520888368
+      }
+    },
+    "301529": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "688244": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002058": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_down_3d": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.211360474962329
+      }
+    },
+    "603067": {
+      "strategy_type": "triple",
+      "triple": true,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "603373": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "002528": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "000635": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "600593": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "603236": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "688078": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "001231": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.142532968146105
+      }
+    },
+    "688156": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "000011": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "688209": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "301231": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "600573": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2347800097378274
+      }
+    },
+    "300363": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "301395": {
+      "strategy_type": "single",
+      "triple": false,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2395842930979144
+      }
+    },
+    "600847": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "603657": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_down_3d": true
+    },
+    "603978": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "600693": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "603669": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "603391": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "000668": {
+      "strategy_type": "triple",
+      "triple": true,
+      "limit_up_3d": true
+    },
+    "603258": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "603598": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "600892": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "603466": {
+      "strategy_type": "double",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "002849": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "301025": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "600256": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300599": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "688023": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002882": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300833": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "301226": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "688517": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.069034356968981
+      }
+    },
+    "603595": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "600831": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.440946789703394
+      }
+    },
+    "600202": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 4.182229223471574
+      }
+    },
+    "301210": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300746": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "600818": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "605136": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.092387784713203
+      }
+    },
+    "002425": {
+      "strategy_type": "single",
+      "triple": false,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3536635414517095
+      }
+    },
+    "688238": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "600753": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "688613": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "688030": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "002623": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "300860": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "301205": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "603268": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "301166": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "000504": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300299": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0035088496269733
+      }
+    },
+    "603289": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603818": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "002029": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "002259": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002285": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_down_3d": true
+    },
+    "603188": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "301230": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "605388": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "301314": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "001228": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "600629": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "600403": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "603266": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "600356": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "000731": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "601872": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "000710": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "000530": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.3552080505465294
+      }
+    },
+    "603991": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "300454": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "300516": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002164": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "000678": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_down_3d": true
+    },
+    "002246": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "688105": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "301355": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "688512": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "688222": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "000498": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "603880": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "300182": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.274381188920914
+      }
+    },
+    "600097": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603048": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "001378": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "688114": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603995": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "300613": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "603276": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "301072": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "002712": {
+      "strategy_type": "single",
+      "triple": false,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2373686226782372
+      }
+    },
+    "603116": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "301036": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "300225": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "600337": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "688199": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2023720362493868
+      }
+    },
+    "688768": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603976": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "603073": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_down_3d": true
+    },
+    "603228": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "002238": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "301551": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "002098": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300209": {
+      "strategy_type": "triple",
+      "triple": true
+    },
+    "002869": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "301060": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002905": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603500": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "688370": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "688489": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "000909": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "001201": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002303": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "601083": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "301262": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "688395": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300915": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300987": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "001207": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300364": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1197175956203838
+      }
+    },
+    "600059": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "301372": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "003033": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "600082": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002836": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "000739": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "600229": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "600812": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_down_3d": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.103552405964707
+      }
+    },
+    "603259": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "002878": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.459196874271714
+      }
+    },
+    "300171": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300281": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603183": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "605100": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "600843": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "601188": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.7901010362881253
+      }
+    },
+    "603578": {
+      "strategy_type": "single",
+      "triple": false,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.0209548830533737
+      }
+    },
+    "300725": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "301001": {
+      "strategy_type": "single",
+      "triple": false,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.2782745837809517
+      }
+    },
+    "600189": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002264": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_up_3d": true
+    },
+    "000972": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603355": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "605089": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "000607": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "688139": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "600640": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "688018": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "301608": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "300301": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true
+    },
+    "600715": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.171569192885299
+      }
+    },
+    "603602": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300434": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603956": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3960115618700568
+      }
+    },
+    "000573": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "300877": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002669": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300649": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "603099": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "002062": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002860": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "688002": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "601101": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "300483": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "001317": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002577": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "605303": {
+      "strategy_type": "single",
+      "triple": false,
+      "limit_down_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0402617555998372
+      }
+    },
+    "688710": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "000690": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true
+    },
+    "002774": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "688479": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "603068": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002174": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "300688": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "001229": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "002003": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "601918": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603127": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "603725": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "000608": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "002832": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "002745": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "003013": {
+      "strategy_type": "single",
+      "triple": false
+    },
+    "002317": {
+      "strategy_type": "single",
+      "triple": false,
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "301273": {
+      "strategy_type": "double",
+      "triple": false,
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.228813428116243
+      }
+    },
+    "301536": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "301310": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "601168": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "688361": {
+      "strategy_type": "double",
+      "triple": false
+    },
+    "603883": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.293157213616496
+      }
+    },
+    "300805": {
+      "short_triple": true
+    },
+    "600289": {
+      "short_triple": true
+    },
+    "001286": {
+      "short_triple": true
+    },
+    "002461": {
+      "short_triple": true
+    },
+    "300832": {
+      "short_triple": true
+    },
+    "301168": {
+      "short_triple": true
+    },
+    "601598": {
+      "short_triple": true
+    },
+    "600023": {
+      "short_triple": true
+    },
+    "600210": {
+      "short_triple": true
+    },
+    "605189": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.415972662513005
+      }
+    },
+    "002630": {
+      "short_triple": true
+    },
+    "002293": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.6324733649214844
+      }
+    },
+    "002480": {
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "600642": {
+      "short_triple": true
+    },
+    "002727": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.466374622431154
+      }
+    },
+    "603529": {
+      "short_triple": true
+    },
+    "688661": {
+      "short_triple": true
+    },
+    "605133": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0003369019716029
+      }
+    },
+    "600011": {
+      "short_triple": true
+    },
+    "688022": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.454358646993744
+      }
+    },
+    "600925": {
+      "short_triple": true
+    },
+    "600621": {
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "600566": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4277888198666762
+      }
+    },
+    "601018": {
+      "short_triple": true
+    },
+    "601000": {
+      "short_triple": true
+    },
+    "600851": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 5.34188402725383
+      }
+    },
+    "003037": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.6748981211566871
+      }
+    },
+    "600901": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.096289088390486
+      }
+    },
+    "603232": {
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "600894": {
+      "short_triple": true
+    },
+    "601816": {
+      "short_triple": true
+    },
+    "600560": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.99733160732988
+      }
+    },
+    "000601": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.072699943401735
+      }
+    },
+    "601985": {
+      "short_triple": true
+    },
+    "603948": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.7697880179828522
+      }
+    },
+    "603727": {
+      "short_triple": true
+    },
+    "600079": {
+      "short_triple": true
+    },
+    "301361": {
+      "short_triple": true
+    },
+    "600718": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.241709322944054
+      }
+    },
+    "601225": {
+      "short_triple": true
+    },
+    "600025": {
+      "short_triple": true
+    },
+    "002990": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1448311120547092
+      }
+    },
+    "603939": {
+      "short_triple": true
+    },
+    "601919": {
+      "short_triple": true
+    },
+    "600350": {
+      "short_triple": true
+    },
+    "003816": {
+      "short_triple": true
+    },
+    "601519": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.5839631431177015
+      }
+    },
+    "002469": {
+      "short_triple": true
+    },
+    "002027": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.078804666931019
+      }
+    },
+    "603105": {
+      "short_triple": true
+    },
+    "600027": {
+      "short_triple": true
+    },
+    "000429": {
+      "short_triple": true
+    },
+    "603992": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 4.305150776533887
+      }
+    },
+    "605287": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 5.138961161172785
+      }
+    },
+    "601107": {
+      "short_triple": true
+    },
+    "600993": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4870985558713827
+      }
+    },
+    "002675": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3991535207930683
+      }
+    },
+    "600886": {
+      "short_triple": true
+    },
+    "601006": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.11705981380223
+      }
+    },
+    "002292": {
+      "short_triple": true
+    },
+    "000999": {
+      "short_triple": true
+    },
+    "601900": {
+      "short_triple": true
+    },
+    "301269": {
+      "short_triple": true
+    },
+    "600377": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0557596462515912
+      }
+    },
+    "600285": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1099098121210587
+      }
+    },
+    "301658": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 4.617340085779156
+      }
+    },
+    "601728": {
+      "short_triple": true
+    },
+    "300072": {
+      "short_triple": true
+    },
+    "603200": {
+      "short_triple": true
+    },
+    "002917": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.0078921424271874
+      }
+    },
+    "300821": {
+      "short_triple": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.9732518141730577
+      }
+    },
+    "603822": {
+      "short_triple": true
+    },
+    "600977": {
+      "short_triple": true
+    },
+    "688345": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.427407904806643
+      }
+    },
+    "600252": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0883748498067987
+      }
+    },
+    "600674": {
+      "short_triple": true
+    },
+    "002693": {
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "601988": {
+      "short_triple": true
+    },
+    "603656": {
+      "short_triple": true
+    },
+    "600310": {
+      "short_triple": true
+    },
+    "601766": {
+      "short_triple": true
+    },
+    "002818": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1739991225168513
+      }
+    },
+    "600548": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.5264815966643224
+      }
+    },
+    "600777": {
+      "short_triple": true
+    },
+    "301002": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.400836204358661
+      }
+    },
+    "300522": {
+      "short_triple": true
+    },
+    "600757": {
+      "short_triple": true
+    },
+    "300984": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.638080673431639
+      }
+    },
+    "603863": {
+      "short_triple": true
+    },
+    "001965": {
+      "short_triple": true
+    },
+    "001872": {
+      "short_triple": true
+    },
+    "601088": {
+      "short_triple": true
+    },
+    "300031": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4099469647850316
+      }
+    },
+    "600863": {
+      "short_triple": true
+    },
+    "002032": {
+      "short_triple": true
+    },
+    "603565": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.047965363909601
+      }
+    },
+    "000719": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.279058902807155
+      }
+    },
+    "601098": {
+      "short_triple": true
+    },
+    "002039": {
+      "short_triple": true
+    },
+    "300847": {
+      "short_triple": true
+    },
+    "600012": {
+      "short_triple": true
+    },
+    "601857": {
+      "short_triple": true
+    },
+    "300199": {
+      "short_triple": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.342858589339014
+      }
+    },
+    "603216": {
+      "short_triple": true,
+      "limit_up_3d": true
+    },
+    "000869": {
+      "short_triple": true
+    },
+    "002748": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3382311474725421
+      }
+    },
+    "600281": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1401384455439374
+      }
+    },
+    "002322": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.319118859116838
+      }
+    },
+    "600237": {
+      "limit_up_3d": true
+    },
+    "603353": {
+      "limit_up_3d": true
+    },
+    "002184": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.4485606134538953
+      }
+    },
+    "000558": {
+      "limit_up_3d": true
+    },
+    "000715": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3923490565010372
+      }
+    },
+    "002549": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.2053633311999445
+      }
+    },
+    "603042": {
+      "limit_up_3d": true
+    },
+    "002862": {
+      "limit_up_3d": true
+    },
+    "000995": {
+      "limit_up_3d": true
+    },
+    "600199": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.5180425731843599
+      }
+    },
+    "600853": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 5.45202930546737
+      }
+    },
+    "002587": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 4.022548658638665
+      }
+    },
+    "600712": {
+      "limit_up_3d": true
+    },
+    "000833": {
+      "limit_up_3d": true
+    },
+    "002639": {
+      "limit_up_3d": true
+    },
+    "002949": {
+      "limit_up_3d": true
+    },
+    "002980": {
+      "limit_up_3d": true
+    },
+    "600228": {
+      "limit_up_3d": true
+    },
+    "002579": {
+      "limit_up_3d": true
+    },
+    "603767": {
+      "limit_up_3d": true
+    },
+    "002640": {
+      "limit_up_3d": true
+    },
+    "002430": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.7527135276703836
+      }
+    },
+    "001336": {
+      "limit_down_3d": true,
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.471594397290415
+      }
+    },
+    "603668": {
+      "limit_down_3d": true
+    },
+    "002866": {
+      "limit_down_3d": true
+    },
+    "002768": {
+      "limit_down_3d": true
+    },
+    "002487": {
+      "limit_down_3d": true
+    },
+    "002531": {
+      "limit_up_3d": true
+    },
+    "603528": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 4.444174675558034
+      }
+    },
+    "002441": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 4.911142390575145
+      }
+    },
+    "603336": {
+      "limit_up_3d": true
+    },
+    "000892": {
+      "limit_up_3d": true
+    },
+    "002576": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 4.373191588940889
+      }
+    },
+    "601929": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.566130125302139
+      }
+    },
+    "601127": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0671725261660923
+      }
+    },
+    "600192": {
+      "limit_up_3d": true
+    },
+    "603032": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.5282946392613015
+      }
+    },
+    "002908": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 4.642520740088036
+      }
+    },
+    "002591": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.4780794618321
+      }
+    },
+    "002692": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 5.292474351150974
+      }
+    },
+    "002413": {
+      "limit_down_3d": true
+    },
+    "603186": {
+      "limit_down_3d": true
+    },
+    "002636": {
+      "limit_down_3d": true
+    },
+    "600722": {
+      "limit_down_3d": true
+    },
+    "603002": {
+      "limit_down_3d": true
+    },
+    "603395": {
+      "limit_down_3d": true
+    },
+    "688670": {
+      "limit_down_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0453769956665337
+      }
+    },
+    "002396": {
+      "limit_down_3d": true
+    },
+    "605366": {
+      "limit_down_3d": true
+    },
+    "603588": {
+      "limit_down_3d": true
+    },
+    "601086": {
+      "limit_down_3d": true,
+      "limit_up_3d": true
+    },
+    "600664": {
+      "limit_down_3d": true
+    },
+    "603101": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.347205839184795
+      }
+    },
+    "603155": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0031746382771392
+      }
+    },
+    "600865": {
+      "limit_up_3d": true
+    },
+    "001300": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.5673856110627096
+      }
+    },
+    "601118": {
+      "limit_up_3d": true
+    },
+    "605399": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4956293531815261
+      }
+    },
+    "600207": {
+      "limit_up_3d": true
+    },
+    "000420": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.1915926400003896
+      }
+    },
+    "002212": {
+      "limit_up_3d": true
+    },
+    "002733": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.0322120655697913
+      }
+    },
+    "605168": {
+      "limit_up_3d": true
+    },
+    "000736": {
+      "limit_up_3d": true
+    },
+    "002979": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.8042328994662047
+      }
+    },
+    "600478": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4854249114605598
+      }
+    },
+    "002181": {
+      "limit_up_3d": true
+    },
+    "601566": {
+      "limit_up_3d": true
+    },
+    "601069": {
+      "limit_up_3d": true
+    },
+    "605188": {
+      "limit_up_3d": true
+    },
+    "600354": {
+      "limit_up_3d": true
+    },
+    "000546": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.4762942904304883
+      }
+    },
+    "600882": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.9149464967202008
+      }
+    },
+    "600371": {
+      "limit_up_3d": true
+    },
+    "002805": {
+      "limit_up_3d": true,
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.7346054075420396
+      }
+    },
+    "603400": {
+      "limit_down_3d": true
+    },
+    "002962": {
+      "limit_down_3d": true
+    },
+    "603823": {
+      "limit_down_3d": true
+    },
+    "002927": {
+      "limit_down_3d": true
+    },
+    "300019": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 5.845971828401795
+      }
+    },
+    "300929": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 4.648694454424633
+      }
+    },
+    "603810": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.4121464789492806
+      }
+    },
+    "301223": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.3962609608933967
+      }
+    },
+    "300293": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 3.0448443373991014
+      }
+    },
+    "920627": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.84206101714729
+      }
+    },
+    "300637": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.8188106538486535
+      }
+    },
+    "301313": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.635363449267096
+      }
+    },
+    "920018": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.587784548459317
+      }
+    },
+    "600550": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.581240854742619
+      }
+    },
+    "603788": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.57790038795626
+      }
+    },
+    "002709": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.5491493023577476
+      }
+    },
+    "002105": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.4767600638854814
+      }
+    },
+    "600779": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.355274306018998
+      }
+    },
+    "300881": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.3400375343572466
+      }
+    },
+    "300444": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.322941749276321
+      }
+    },
+    "002116": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.297302198512589
+      }
+    },
+    "002919": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.285356322263673
+      }
+    },
+    "300389": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.2820702051543353
+      }
+    },
+    "301069": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.249224949783949
+      }
+    },
+    "300326": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.248124259714361
+      }
+    },
+    "001380": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.23484654220234
+      }
+    },
+    "688282": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.22102218854179
+      }
+    },
+    "300556": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.2118425855542756
+      }
+    },
+    "300919": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.2012951339622555
+      }
+    },
+    "002923": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.1749966052608687
+      }
+    },
+    "301082": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.1372785037310265
+      }
+    },
+    "001255": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 2.135238386450711
+      }
+    },
+    "301102": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.9893235807611536
+      }
+    },
+    "300882": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.9840606582019278
+      }
+    },
+    "920985": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.922590875455417
+      }
+    },
+    "300906": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.8963343983639778
+      }
+    },
+    "301215": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.8794306577072883
+      }
+    },
+    "000099": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.826650619936677
+      }
+    },
+    "300315": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.8012839128794358
+      }
+    },
+    "002086": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.7980771824591422
+      }
+    },
+    "601798": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.7723164379553897
+      }
+    },
+    "600615": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.7693723224645657
+      }
+    },
+    "300801": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.7121418615348623
+      }
+    },
+    "001236": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.701017324171039
+      }
+    },
+    "300712": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.6987965857820182
+      }
+    },
+    "002302": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.687088151923956
+      }
+    },
+    "001356": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.6609426069660231
+      }
+    },
+    "300758": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.6515065191347829
+      }
+    },
+    "001325": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.624463350460197
+      }
+    },
+    "300329": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.6007538480875099
+      }
+    },
+    "000541": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.5675949441082075
+      }
+    },
+    "600502": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.509393183750558
+      }
+    },
+    "920239": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.5037346815009278
+      }
+    },
+    "300067": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4951083969839527
+      }
+    },
+    "920575": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4856715319038851
+      }
+    },
+    "002816": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4795171216829317
+      }
+    },
+    "601518": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.478055205793439
+      }
+    },
+    "300781": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4766486281277482
+      }
+    },
+    "000697": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4721034488723463
+      }
+    },
+    "600746": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.460909572556979
+      }
+    },
+    "301118": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4582482154047682
+      }
+    },
+    "002404": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.458027362490758
+      }
+    },
+    "605099": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4520089940067813
+      }
+    },
+    "601318": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4459229084187617
+      }
+    },
+    "603153": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4430969446241009
+      }
+    },
+    "002513": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4359373503248156
+      }
+    },
+    "603690": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4285992847455469
+      }
+    },
+    "001308": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4285629138930942
+      }
+    },
+    "603808": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.4186455531548834
+      }
+    },
+    "301278": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.403222858829333
+      }
+    },
+    "688808": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3991411634033102
+      }
+    },
+    "000799": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3956719669990996
+      }
+    },
+    "688357": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3907793982244916
+      }
+    },
+    "301238": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3788698947001667
+      }
+    },
+    "300627": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3709810492330488
+      }
+    },
+    "688648": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3709806307214127
+      }
+    },
+    "300769": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3664891963291
+      }
+    },
+    "300715": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.364909909737082
+      }
+    },
+    "300792": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3629186894019834
+      }
+    },
+    "301110": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.36036689588448
+      }
+    },
+    "600556": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3377077056164666
+      }
+    },
+    "603566": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3299049417505018
+      }
+    },
+    "920152": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3255799455997523
+      }
+    },
+    "300045": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.32265492475886
+      }
+    },
+    "301508": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3147948524572213
+      }
+    },
+    "301030": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3124006262273555
+      }
+    },
+    "601033": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3108875053263611
+      }
+    },
+    "002838": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3086787570205027
+      }
+    },
+    "301598": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3085190021296185
+      }
+    },
+    "600004": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3045498468620653
+      }
+    },
+    "300111": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.30113474366916
+      }
+    },
+    "601298": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.3003490499039014
+      }
+    },
+    "688237": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2975725178179145
+      }
+    },
+    "002291": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.293013795625526
+      }
+    },
+    "600558": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2916320692625192
+      }
+    },
+    "300490": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.289492470679188
+      }
+    },
+    "600009": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2855276333188927
+      }
+    },
+    "603239": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2843119974200725
+      }
+    },
+    "920925": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2440889774603987
+      }
+    },
+    "603661": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2238342582738169
+      }
+    },
+    "300471": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.209529906493429
+      }
+    },
+    "000989": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.2056053394923276
+      }
+    },
+    "300899": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1965602427804822
+      }
+    },
+    "603260": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1962756865044677
+      }
+    },
+    "301378": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1946010139333407
+      }
+    },
+    "301286": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.194519103831463
+      }
+    },
+    "300377": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1936180627951312
+      }
+    },
+    "301309": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1919416284543785
+      }
+    },
+    "300380": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.190620085195673
+      }
+    },
+    "301088": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1764983840609209
+      }
+    },
+    "302132": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1761938190846257
+      }
+    },
+    "600689": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1720904378845218
+      }
+    },
+    "300612": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1695243834184994
+      }
+    },
+    "600807": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1616987453506202
+      }
+    },
+    "300949": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1560973118134645
+      }
+    },
+    "300771": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1552275917686496
+      }
+    },
+    "600052": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1521408560172626
+      }
+    },
+    "600513": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1519387242230008
+      }
+    },
+    "001269": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1508771309969519
+      }
+    },
+    "300354": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1487439566230349
+      }
+    },
+    "688184": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1478303793751405
+      }
+    },
+    "603616": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1473185131673929
+      }
+    },
+    "601515": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1466493840574508
+      }
+    },
+    "301248": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1456357008769824
+      }
+    },
+    "002777": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1445612057451076
+      }
+    },
+    "002523": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1424717284487724
+      }
+    },
+    "301287": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1396264170686456
+      }
+    },
+    "603025": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.139533237327723
+      }
+    },
+    "603209": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1370265736279102
+      }
+    },
+    "300872": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1363469155056651
+      }
+    },
+    "300770": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1358678402650673
+      }
+    },
+    "000768": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1345201468594959
+      }
+    },
+    "600686": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1305954352308778
+      }
+    },
+    "002270": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1268981780179683
+      }
+    },
+    "301149": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1261477126393704
+      }
+    },
+    "600111": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1234242936431815
+      }
+    },
+    "300707": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.119494646428943
+      }
+    },
+    "600438": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.1101716121578022
+      }
+    },
+    "001278": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.108247304202867
+      }
+    },
+    "603181": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.107862698939447
+      }
+    },
+    "688560": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0965191155353144
+      }
+    },
+    "300141": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0955786091220683
+      }
+    },
+    "301358": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0915749166882354
+      }
+    },
+    "300827": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0892115577787165
+      }
+    },
+    "600702": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.089138050184933
+      }
+    },
+    "601968": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0873018669771584
+      }
+    },
+    "603855": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0842195437791864
+      }
+    },
+    "002125": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0826618050999812
+      }
+    },
+    "300438": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0824216746284183
+      }
+    },
+    "600588": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0812693410725462
+      }
+    },
+    "603326": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0797178798639349
+      }
+    },
+    "920396": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.077735314880227
+      }
+    },
+    "600167": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0747453894260615
+      }
+    },
+    "600320": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0713731721507649
+      }
+    },
+    "600768": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0658248364011353
+      }
+    },
+    "605588": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0631543788906654
+      }
+    },
+    "601800": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0610719854441226
+      }
+    },
+    "002961": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0609207172608923
+      }
+    },
+    "600303": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0546796536930223
+      }
+    },
+    "603197": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0457204206724693
+      }
+    },
+    "300564": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.042533267393984
+      }
+    },
+    "002235": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.042524180027438
+      }
+    },
+    "000757": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0416387270882326
+      }
+    },
+    "600099": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0412828355572368
+      }
+    },
+    "300510": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0404336765180344
+      }
+    },
+    "688459": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.039187207736559
+      }
+    },
+    "600037": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0390845376791134
+      }
+    },
+    "001206": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0361529423764875
+      }
+    },
+    "002044": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0348692354430997
+      }
+    },
+    "600370": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0344118792129309
+      }
+    },
+    "002835": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0326790299968245
+      }
+    },
+    "688717": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0310346346974624
+      }
+    },
+    "920112": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0274668200347985
+      }
+    },
+    "603517": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0274631799947966
+      }
+    },
+    "688562": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0272504306532733
+      }
+    },
+    "920167": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0200040612294192
+      }
+    },
+    "603110": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0191010241116494
+      }
+    },
+    "002938": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.017549055413823
+      }
+    },
+    "603787": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0132912362477888
+      }
+    },
+    "301212": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0129951570460611
+      }
+    },
+    "300396": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0094724080243715
+      }
+    },
+    "601166": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.009157381537742
+      }
+    },
+    "000528": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0071908409145942
+      }
+    },
+    "300611": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.004238243015026
+      }
+    },
+    "688219": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0029119374859983
+      }
+    },
+    "688390": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0018638522840821
+      }
+    },
+    "600725": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.0018123398550665
+      }
+    },
+    "300360": {
+      "volume_anomaly": {
+        "date": "2026-10-13",
+        "multiple": 1.00147710363592
+      }
+    }
+  }
+}

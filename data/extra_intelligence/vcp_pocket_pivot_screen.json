@@ -1,0 +1,248 @@
+{
+  "strategy": "pocket",
+  "total": 12,
+  "raw_total": 12,
+  "page": 1,
+  "page_size": 50,
+  "generated_at": "2026-10-13 22:18:33",
+  "trade_date": "2026-10-13",
+  "items": [
+    {
+      "code": "001231",
+      "name": "农心科技",
+      "industry": "化学原料和化学制品制造业",
+      "trade_date": "2026-10-13",
+      "close": 28.17,
+      "pct_change": 10.0,
+      "amount": 269440.1,
+      "turnover_rate": 19.1871,
+      "volume_ratio": null,
+      "float_mv": 143562.4893,
+      "rps20": 98.47,
+      "rps50": 98.21,
+      "rps120": 87.21,
+      "rps250": 89.39,
+      "signals": [
+        "延伸放量",
+        "延伸大涨",
+        "经典综合"
+      ]
+    },
+    {
+      "code": "600693",
+      "name": "东百集团",
+      "industry": "零售业",
+      "trade_date": "2026-10-13",
+      "close": 12.3,
+      "pct_change": 10.02,
+      "amount": 2058068.59,
+      "turnover_rate": 19.746,
+      "volume_ratio": null,
+      "float_mv": 1068811.944,
+      "rps20": 91.16,
+      "rps50": 97.94,
+      "rps120": 86.19,
+      "rps250": 96.78,
+      "signals": [
+        "延伸放量",
+        "延伸大涨",
+        "经典综合"
+      ]
+    },
+    {
+      "code": "300929",
+      "name": "华骐环保",
+      "industry": "生态保护和环境治理业",
+      "trade_date": "2026-10-13",
+      "close": 16.57,
+      "pct_change": 10.47,
+      "amount": 265018.26,
+      "turnover_rate": 12.5725,
+      "volume_ratio": null,
+      "float_mv": 207722.1828,
+      "rps20": 86.1,
+      "rps50": 66.37,
+      "rps120": 94.69,
+      "rps250": 92.41,
+      "signals": [
+        "标准口袋",
+        "极强量价",
+        "经典综合"
+      ]
+    },
+    {
+      "code": "002913",
+      "name": "奥士康",
+      "industry": "计算机、通信和其他电子设备制造业",
+      "trade_date": "2026-10-13",
+      "close": 89.87,
+      "pct_change": 6.78,
+      "amount": 1571581.93,
+      "turnover_rate": 5.8637,
+      "volume_ratio": null,
+      "float_mv": 2744979.61,
+      "rps20": 99.33,
+      "rps50": 99.42,
+      "rps120": 98.52,
+      "rps250": 96.76,
+      "signals": [
+        "标准口袋",
+        "经典综合"
+      ]
+    },
+    {
+      "code": "600593",
+      "name": "大连圣亚",
+      "industry": "公共设施管理业",
+      "trade_date": "2026-10-13",
+      "close": 49.83,
+      "pct_change": 10.0,
+      "amount": 560508.81,
+      "turnover_rate": 9.1487,
+      "volume_ratio": null,
+      "float_mv": 641810.4,
+      "rps20": 97.77,
+      "rps50": 94.97,
+      "rps120": 95.63,
+      "rps250": 89.89,
+      "signals": [
+        "标准突破",
+        "经典综合"
+      ]
+    },
+    {
+      "code": "002322",
+      "name": "理工能科",
+      "industry": "软件和信息技术服务业",
+      "trade_date": "2026-10-13",
+      "close": 13.08,
+      "pct_change": 10.01,
+      "amount": 320103.29,
+      "turnover_rate": 7.0201,
+      "volume_ratio": null,
+      "float_mv": 459606.2172,
+      "rps20": 83.01,
+      "rps50": 93.61,
+      "rps120": 72.72,
+      "rps250": 72.02,
+      "signals": [
+        "延伸放量",
+        "延伸大涨"
+      ]
+    },
+    {
+      "code": "300489",
+      "name": "光智科技",
+      "industry": "计算机、通信和其他电子设备制造业",
+      "trade_date": "2026-10-13",
+      "close": 301.22,
+      "pct_change": 14.07,
+      "amount": 5291343.95,
+      "turnover_rate": 13.5667,
+      "volume_ratio": null,
+      "float_mv": 4151486.3328,
+      "rps20": 98.87,
+      "rps50": 98.95,
+      "rps120": 100.0,
+      "rps250": 99.96,
+      "signals": [
+        "标准口袋"
+      ]
+    },
+    {
+      "code": "002980",
+      "name": "华盛昌",
+      "industry": "仪器仪表制造业",
+      "trade_date": "2026-10-13",
+      "close": 116.05,
+      "pct_change": 10.0,
+      "amount": 1805614.15,
+      "turnover_rate": 16.1004,
+      "volume_ratio": null,
+      "float_mv": 1175433.314,
+      "rps20": 64.03,
+      "rps50": 95.26,
+      "rps120": 98.83,
+      "rps250": 99.84,
+      "signals": [
+        "经典综合"
+      ]
+    },
+    {
+      "code": "688361",
+      "name": "中科飞测",
+      "industry": "专用设备制造业",
+      "trade_date": "2026-10-13",
+      "close": 366.51,
+      "pct_change": 6.04,
+      "amount": 3858374.73,
+      "turnover_rate": 3.1162,
+      "volume_ratio": null,
+      "float_mv": 12903046.8567,
+      "rps20": 96.89,
+      "rps50": 22.79,
+      "rps120": 99.52,
+      "rps250": 99.63,
+      "signals": [
+        "经典综合"
+      ]
+    },
+    {
+      "code": "603328",
+      "name": "依顿电子",
+      "industry": "计算机、通信和其他电子设备制造业",
+      "trade_date": "2026-10-13",
+      "close": 13.34,
+      "pct_change": 9.98,
+      "amount": 703554.12,
+      "turnover_rate": 5.5946,
+      "volume_ratio": null,
+      "float_mv": 1331922.4284,
+      "rps20": 97.73,
+      "rps50": 97.56,
+      "rps120": 82.67,
+      "rps250": 74.4,
+      "signals": [
+        "经典综合"
+      ]
+    },
+    {
+      "code": "688209",
+      "name": "英集芯",
+      "industry": "计算机、通信和其他电子设备制造业",
+      "trade_date": "2026-10-13",
+      "close": 31.33,
+      "pct_change": 7.29,
+      "amount": 755621.86,
+      "turnover_rate": 5.7499,
+      "volume_ratio": null,
+      "float_mv": 1359045.272,
+      "rps20": 38.06,
+      "rps50": 96.01,
+      "rps120": 97.0,
+      "rps250": 91.63,
+      "signals": [
+        "经典综合"
+      ]
+    },
+    {
+      "code": "603565",
+      "name": "中谷物流",
+      "industry": "水上运输业",
+      "trade_date": "2026-10-13",
+      "close": 12.35,
+      "pct_change": 5.38,
+      "amount": 438433.48,
+      "turnover_rate": 1.7126,
+      "volume_ratio": null,
+      "float_mv": 2593577.9285,
+      "rps20": 77.39,
+      "rps50": 85.23,
+      "rps120": 86.96,
+      "rps250": 79.18,
+      "signals": [
+        "极强量价"
+      ]
+    }
+  ]
+}

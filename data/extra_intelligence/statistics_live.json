@@ -1,0 +1,57 @@
+{
+  "pending": false,
+  "holding_close": true,
+  "next_open": "2026-10-15T09:30:00+08:00",
+  "date": "2026-10-14",
+  "state": "收盘后",
+  "checked_at": "2026-10-14T15:36:11+08:00",
+  "poll_seconds": 64428,
+  "metrics": {
+    "score": 38.0,
+    "limit_up": 36,
+    "limit_down": 11,
+    "break_count": 24,
+    "seal_rate": 60.0,
+    "two_plus": 15,
+    "height": 4.0
+  },
+  "sources": {
+    "ZT": {
+      "status": "ok",
+      "fetched_at": "2026-10-14T15:00:02+08:00"
+    },
+    "DT": {
+      "status": "ok",
+      "fetched_at": "2026-10-14T15:00:02+08:00"
+    },
+    "ZB": {
+      "status": "ok",
+      "fetched_at": "2026-10-14T15:00:02+08:00"
+    },
+    "qx": {
+      "status": "ok",
+      "score": 38.0,
+      "as_of": "2026-10-14T15:00:00+08:00",
+      "limit_up_count": 36,
+      "limit_down_count": 12,
+      "date_basis": "last_modified"
+    }
+  },
+  "rps": {
+    "as_of": "2026-10-14T15:05:00",
+    "sample_count": 5154,
+    "snapshot_count": 5154,
+    "excluded_quotes": 0,
+    "stale": false,
+    "up": 911,
+    "down": 4131,
+    "flat": 112,
+    "strategies": {
+      "triple": 36,
+      "double": 101,
+      "single": 166
+    },
+    "new": 48,
+    "exit": 72
+  }
+}
