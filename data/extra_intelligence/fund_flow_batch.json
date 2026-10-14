@@ -1,0 +1,79 @@
+{
+  "items": {
+    "300308": {
+      "code": "300308",
+      "main_net_flow": -12540.0,
+      "net_inflow": -8420.0
+    },
+    "300502": {
+      "code": "300502",
+      "main_net_flow": -9820.0,
+      "net_inflow": -6150.0
+    },
+    "300750": {
+      "code": "300750",
+      "main_net_flow": -15600.0,
+      "net_inflow": -11200.0
+    },
+    "600519": {
+      "code": "600519",
+      "main_net_flow": 8500.0,
+      "net_inflow": 5200.0
+    },
+    "002343": {
+      "code": "002343",
+      "main_net_flow": 18500.0,
+      "net_inflow": 14200.0
+    },
+    "603096": {
+      "code": "603096",
+      "main_net_flow": 12600.0,
+      "net_inflow": 9800.0
+    },
+    "002696": {
+      "code": "002696",
+      "main_net_flow": 15800.0,
+      "net_inflow": 13200.0
+    },
+    "000668": {
+      "code": "000668",
+      "main_net_flow": 6800.0,
+      "net_inflow": 4900.0
+    },
+    "300767": {
+      "code": "300767",
+      "main_net_flow": 8900.0,
+      "net_inflow": 7100.0
+    },
+    "000823": {
+      "code": "000823",
+      "main_net_flow": 9400.0,
+      "net_inflow": 6800.0
+    },
+    "600731": {
+      "code": "600731",
+      "main_net_flow": 4500.0,
+      "net_inflow": 3200.0
+    },
+    "000530": {
+      "code": "000530",
+      "main_net_flow": 11200.0,
+      "net_inflow": 8900.0
+    },
+    "605189": {
+      "code": "605189",
+      "main_net_flow": 14300.0,
+      "net_inflow": 11500.0
+    },
+    "603876": {
+      "code": "603876",
+      "main_net_flow": 5600.0,
+      "net_inflow": 4100.0
+    },
+    "688137": {
+      "code": "688137",
+      "main_net_flow": 3200.0,
+      "net_inflow": 2100.0
+    }
+  }
+}

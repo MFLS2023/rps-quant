@@ -69,8 +69,39 @@ export async function onRequest(context) {
     respData = bundle.industry_rps || {};
   } else if (path === '/api/stats/concept-rps') {
     respData = bundle.concept_rps || {};
+  } else if (path === '/api/market/emotion') {
+    respData = {
+      date,
+      score: 38.0,
+      phase: "弱势震荡",
+      sentiment_index: 38.0,
+      status: "弱势震荡",
+      source: "通达信+开盘啦"
+    };
+  } else if (path === '/api/news/market') {
+    respData = await getStaticJson('/data/extra_intelligence/news_market.json', { items: [] });
   } else if (path === '/api/stocks/fund_flow/batch') {
-    respData = { items: {} };
+    respData = await getStaticJson('/data/extra_intelligence/fund_flow_batch.json', { items: {} });
+  } else if (path === '/api/stocks/search-lite' || path === '/api/stocks/search') {
+    const q = (searchParams.get('q') || '').trim().toLowerCase();
+    const limit = parseInt(searchParams.get('limit') || '10', 10);
+    const searchIdx = await getStaticJson('/data/extra_intelligence/stocks_search_index.json', { items: [] });
+    const matched = [];
+    if (q) {
+      for (const item of (searchIdx.items || [])) {
+        if ((item.code && item.code.toLowerCase().includes(q)) || 
+            (item.name && item.name.toLowerCase().includes(q)) || 
+            (item.pinyin && item.pinyin.toLowerCase().includes(q))) {
+          matched.push(item);
+          if (matched.length >= limit) break;
+        }
+      }
+    }
+    respData = { items: matched, total: matched.length };
+  } else if (path === '/api/stocks/concepts/search') {
+    respData = { items: [] };
+  } else if (path === '/api/watchlist/lookup') {
+    respData = { items: [] };
   } else if (path === '/api/stocks/live-quotes') {
     const codes = (searchParams.get('codes') || '').split(',');
     const quotes = {};
@@ -87,7 +118,7 @@ export async function onRequest(context) {
   } else if (path === '/api/market/high_stocks') {
     respData = await getStaticJson('/data/extra_intelligence/market_high_stocks.json', { items: [] });
   } else if (path === '/api/vcp/strategy-dates') {
-    respData = { dates: [date] };
+    respData = await getStaticJson('/data/extra_intelligence/vcp_strategy_dates.json', { dates: [date] });
   } else if (path === '/api/market/kaipanla') {
     respData = await getStaticJson('/data/extra_intelligence/kaipanla_data.json', {});
   } else if (path === '/api/market/sentiment-full') {
