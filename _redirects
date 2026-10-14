@@ -1,3 +1,2 @@
-/kaipanla    /kaipanla.html    200
-/kaipanla/*  /kaipanla.html    200
-/*           /index.html       200
+/kaipanla/*  /kaipanla/index.html  200
+/*           /index.html           200
