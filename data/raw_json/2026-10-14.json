@@ -1342,17 +1342,30 @@
     ],
     "market_mainline": {
       "headline": "AI应用与影视传媒逆市走强，低位防守板块轮动活跃",
+      "overall_label": "主线明确",
       "items": [
         {
           "industry": "视频音频媒体",
+          "tier": "core",
+          "tier_label": "主线",
+          "reason": "AI影视短剧全线爆发",
+          "score": 92.5,
           "member_count": 5
         },
         {
           "industry": "影视制作",
+          "tier": "core",
+          "tier_label": "主线",
+          "reason": "慈文传媒4板领跑梯队",
+          "score": 88.0,
           "member_count": 3
         },
         {
           "industry": "油气开采",
+          "tier": "aux",
+          "tier_label": "支线",
+          "reason": "低位防守资金持续流入",
+          "score": 81.2,
           "member_count": 2
         }
       ]
